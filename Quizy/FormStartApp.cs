@@ -1,3 +1,4 @@
+using Quizy.Forms_Derived_From_Start_Form;
 using System.Reflection;
 
 namespace Quizy
@@ -25,7 +26,10 @@ namespace Quizy
 
         private void pictureBoxCustomQuizCreator_Click(object sender, EventArgs e)
         {
-
+            FormCustomQuizCreator formCustomQuizCreator = new FormCustomQuizCreator();
+            this.Hide();
+            formCustomQuizCreator.Closed += (s, args) => this.Close();
+            formCustomQuizCreator.Show();
         }
 
         private void pictureBoxTutorialCustomQuiz_Click(object sender, EventArgs e)
