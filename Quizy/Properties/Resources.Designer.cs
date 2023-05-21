@@ -63,9 +63,59 @@ namespace Quizy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Algebra_Quiz {
+            get {
+                object obj = ResourceManager.GetObject("Algebra Quiz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background_flash_memory_card {
+            get {
+                object obj = ResourceManager.GetObject("Background_flash_memory_card", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap background_main_quiz {
+            get {
+                object obj = ResourceManager.GetObject("background_main_quiz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background_pop_quiz {
+            get {
+                object obj = ResourceManager.GetObject("Background_pop_quiz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Background_Start {
             get {
                 object obj = ResourceManager.GetObject("Background_Start", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Computer_Science_Quiz {
+            get {
+                object obj = ResourceManager.GetObject("Computer Science Quiz", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,10 +153,40 @@ namespace Quizy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Geometry_Quiz {
+            get {
+                object obj = ResourceManager.GetObject("Geometry Quiz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Main_Quiz {
             get {
                 object obj = ResourceManager.GetObject("Main Quiz", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Physics_Quiz {
+            get {
+                object obj = ResourceManager.GetObject("Physics Quiz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Program_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Program_Icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }
