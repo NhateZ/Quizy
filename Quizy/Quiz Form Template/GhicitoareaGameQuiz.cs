@@ -13,9 +13,12 @@ namespace Quizy.Quiz_Form_Template
 {
     public partial class GhicitoareaGameQuiz : Form
     {
-        public string[] WordCollection = new string[8];
+        public string[] WordCollection = { "Alfabet", "Analfabet", "Shaorma" };
         public string GuessWord { get; set; }
         public int Mistake = 0;
+        public int Correct = 0;
+        public int point = 100;
+        public int numberOfWords {get; set; }
 
         public GhicitoareaGameQuiz()
         {
@@ -25,14 +28,15 @@ namespace Quizy.Quiz_Form_Template
 
         private void GhicitoareaGameQuiz_Load(object sender, EventArgs e)
         {
+            //WordCollection = 
             /*
              * 
              * Insert Database...
             */
             Random randomNumber = new Random();
-            GuessWord = WordCollection[randomNumber.NextInt64(0, 7)];
+            GuessWord = WordCollection[randomNumber.NextInt64(0, numberOfWords)];
 
-            for(int i = 12;i <= 12-GuessWord.Length;i++) 
+            for(int i = 12;i > GuessWord.Length; i--) 
             {
                 HideLabel(i);
             }
@@ -127,6 +131,12 @@ namespace Quizy.Quiz_Form_Template
                     break;
 
             }
+            Correct++;
+            if(Correct == GuessWord.Length)
+            {
+                MessageBox.Show($"Ai câștigat!\nAi obținut {point}  puuncte", "Ai câștigat!");
+
+            }
         }
         private void ChangeStateMisake(int mistakes)
         {
@@ -148,10 +158,11 @@ namespace Quizy.Quiz_Form_Template
                     
                 break;
                 case 6:
-                //game Over;    
+                    //game Over;
+                    MessageBox.Show("Ai pierdut!", "Ai pierdut!");
                 break;
             }
-
+            point -= 15;
         }
 
         private void pictureBoxA_Click(object sender, EventArgs e)
@@ -162,7 +173,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -171,6 +182,7 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxA.Visible = false;
         }
 
         private void pictureBoxB_Click(object sender, EventArgs e)
@@ -181,7 +193,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     if (GuessWord[i] == 'b' || GuessWord[i] == 'B')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i+1, GuessWord[i]);
                     }
                 }
             }
@@ -190,17 +202,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxB.Visible = false;
         }
 
         private void pictureBoxC_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('c') || GuessWord.Contains('C'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'c' || GuessWord[i] == 'C')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -209,17 +222,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxC.Visible = false;
         }
 
         private void pictureBoxD_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('d') || GuessWord.Contains('D'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'd' || GuessWord[i] == 'D')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -228,17 +242,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxD.Visible = false;
         }
 
         private void pictureBoxE_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('e') || GuessWord.Contains('E'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'e' || GuessWord[i] == 'E')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -247,17 +262,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxE.Visible = false;
         }
 
         private void pictureBoxF_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('f') || GuessWord.Contains('F'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'f' || GuessWord[i] == 'F')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -266,17 +282,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxF.Visible = false;
         }
 
         private void pictureBoxG_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('g') || GuessWord.Contains('G'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'g' || GuessWord[i] == 'G')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -285,17 +302,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxG.Visible = false;
         }
 
         private void pictureBoxH_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('h') || GuessWord.Contains('H'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'h' || GuessWord[i] == 'H')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -304,17 +322,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxH.Visible = false;
         }
 
         private void pictureBoxI_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('i') || GuessWord.Contains('I'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'i' || GuessWord[i] == 'I')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -323,17 +342,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxI.Visible = false;
         }
 
         private void pictureBoxJ_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('j') || GuessWord.Contains('J'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'j' || GuessWord[i] == 'J')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -342,17 +362,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxJ.Visible = false;
         }
 
         private void pictureBoxK_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('k') || GuessWord.Contains('K'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'k' || GuessWord[i] == 'K')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -361,19 +382,21 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxK.Visible = false;
         }
 
         private void pictureBoxL_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('l') || GuessWord.Contains('L'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'l' || GuessWord[i] == 'L')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
+                pictureBoxL.Visible = false;
             }
             else
             {
@@ -384,13 +407,13 @@ namespace Quizy.Quiz_Form_Template
 
         private void pictureBoxM_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('m') || GuessWord.Contains('M'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'm' || GuessWord[i] == 'M')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -399,17 +422,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxM.Visible = false;
         }
 
         private void pictureBoxN_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('n') || GuessWord.Contains('N'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'n' || GuessWord[i] == 'N')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -418,17 +442,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxN.Visible = false;
         }
 
         private void pictureBoxO_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('o') || GuessWord.Contains('O'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'o' || GuessWord[i] == 'O')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -437,17 +462,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxO.Visible = false;
         }
 
         private void pictureBoxP_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('p') || GuessWord.Contains('P'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'p' || GuessWord[i] == 'P')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -456,17 +482,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxP.Visible = false;
         }
 
         private void pictureBoxQ_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('q') || GuessWord.Contains('Q'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'q' || GuessWord[i] == 'Q')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -475,17 +502,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxQ.Visible = false;
         }
 
         private void pictureBoxR_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('r') || GuessWord.Contains('R'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'r' || GuessWord[i] == 'R')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -494,17 +522,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxR.Visible = false;
         }
 
         private void pictureBoxS_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('s') || GuessWord.Contains('S'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 's' || GuessWord[i] == 'S')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -513,17 +542,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxS.Visible = false;
         }
 
         private void pictureBoxT_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('t') || GuessWord.Contains('T'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 't' || GuessWord[i] == 'T')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -532,17 +562,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxT.Visible = false;
         }
 
         private void pictureBoxU_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('u') || GuessWord.Contains('U'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'u' || GuessWord[i] == 'U')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -551,17 +582,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxU.Visible = false;
         }
 
         private void pictureBoxV_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('v') || GuessWord.Contains('V'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'v' || GuessWord[i] == 'V')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -570,17 +602,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxV.Visible = false;
         }
 
         private void pictureBoxW_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('w') || GuessWord.Contains('W'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'w' || GuessWord[i] == 'W')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -589,17 +622,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxW.Visible = false;
         }
 
         private void pictureBoxX_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('x') || GuessWord.Contains('X'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'x' || GuessWord[i] == 'X')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -608,17 +642,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxX.Visible = false;
         }
 
         private void pictureBoxY_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('y') || GuessWord.Contains('Y'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'y' || GuessWord[i] == 'Y')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -627,17 +662,18 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxY.Visible = false;
         }
 
         private void pictureBoxZ_Click(object sender, EventArgs e)
         {
-            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('z') || GuessWord.Contains('Z'))
             {
                 for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
-                    if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
+                    if (GuessWord[i] == 'z' || GuessWord[i] == 'Z')
                     {
-                        ShowLetter(i, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }
@@ -646,6 +682,7 @@ namespace Quizy.Quiz_Form_Template
                 Mistake++;
                 ChangeStateMisake(Mistake);
             }
+            pictureBoxZ.Visible = false;
         }
     }
 }

@@ -20,7 +20,7 @@ namespace Quizy.Quiz_Form_Template
          * 2 - Blue
          * 3 - Yellow
         */
-        public short Time { get; set; }
+        public int Time { get; set; }
 
 
         public PopQuizGameQuiz()
@@ -80,7 +80,8 @@ namespace Quizy.Quiz_Form_Template
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            
+            Time++;
+            labelTimer.Text= Time.ToString();
         }
     }
 }

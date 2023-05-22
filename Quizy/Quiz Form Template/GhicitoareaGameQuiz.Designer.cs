@@ -570,8 +570,9 @@
             this.Controls.Add(this.pictureBoxC);
             this.Controls.Add(this.pictureBoxB);
             this.Controls.Add(this.pictureBoxA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GhicitoareaGameQuiz";
-            this.Text = "GhicitoareaGameQuiz";
+            this.Text = "Ghicitoarea";
             this.Load += new System.EventHandler(this.GhicitoareaGameQuiz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxB)).EndInit();

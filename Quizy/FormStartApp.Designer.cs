@@ -102,6 +102,7 @@
             this.Controls.Add(this.pictureBoxCustomQuizCreator);
             this.Controls.Add(this.pictureBoxCustomQuiz);
             this.Controls.Add(this.pictureBoxMainQuiz);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormStart";
             this.Text = "Quizy";
