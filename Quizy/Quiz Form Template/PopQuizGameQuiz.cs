@@ -20,8 +20,8 @@ namespace Quizy.Quiz_Form_Template
          * 2 - Blue
          * 3 - Yellow
         */
-        public int Time { get; set; }
-
+        public int Time = 100;
+        public bool isFinished = false;
 
         public PopQuizGameQuiz()
         {
@@ -80,7 +80,7 @@ namespace Quizy.Quiz_Form_Template
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            Time++;
+            Time--;
             labelTimer.Text= Time.ToString();
         }
     }

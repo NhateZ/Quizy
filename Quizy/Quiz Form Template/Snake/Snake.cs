@@ -24,9 +24,10 @@ namespace Quizy.Quiz_Form_Template.Snake
         int maxHeight;
 
         int score;
+        public int time;
         public int requiredScore = 100;
-        int time;
-        
+        public int increment = 10;        
+        public bool isFinished = false;
 
         //Fuctions
         public SnakeGame()
@@ -36,6 +37,7 @@ namespace Quizy.Quiz_Form_Template.Snake
             new Settings();
             startGame();
             RequiredScore.Text = requiredScore.ToString();
+            labelScore.Text = "Score:";
         }
 
         private void KeyIsUp(object sender, KeyEventArgs e)
@@ -78,8 +80,8 @@ namespace Quizy.Quiz_Form_Template.Snake
         }
         private void EatFood()
         {
-            score += 10;
-            Score.Text = "Score: " + score;
+            score += increment;
+            Score.Text = score.ToString();
             Circle body = new Circle
             {
                 X = Snake[Snake.Count - 1].X,
@@ -127,8 +129,12 @@ namespace Quizy.Quiz_Form_Template.Snake
 
         private void timerTime_Tick(object sender, EventArgs e)
         {
-            time++;
+            time--;
             labelTime.Text = time.ToString();
+            if(time<=0) 
+            {
+                GameOver();
+            }
         }
 
         private void timerMovement_Tick(object sender, EventArgs e)
@@ -230,11 +236,14 @@ namespace Quizy.Quiz_Form_Template.Snake
         }
 
          
-        private void GameOver()
+        async private void GameOver()
         {
             timerTick.Stop();
             timerTime.Stop();
             timerMovement.Stop();
+            MessageBox.Show("Ai pierdut!\nJocul v-a reîncepe în cinci secunde!", "Ai piretdut!");
+            await Task.Delay(500);
+            startGame();
         }
     }
 }

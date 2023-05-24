@@ -66,6 +66,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.textBoxWordDescription = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxD)).BeginInit();
@@ -525,6 +526,15 @@
             this.label9.TabIndex = 34;
             this.label9.Text = "_";
             // 
+            // textBoxWordDescription
+            // 
+            this.textBoxWordDescription.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxWordDescription.Location = new System.Drawing.Point(100, 15);
+            this.textBoxWordDescription.Name = "textBoxWordDescription";
+            this.textBoxWordDescription.Size = new System.Drawing.Size(711, 130);
+            this.textBoxWordDescription.TabIndex = 38;
+            this.textBoxWordDescription.Text = "";
+            // 
             // GhicitoareaGameQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -532,6 +542,7 @@
             this.BackgroundImage = global::Quizy.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(884, 451);
+            this.Controls.Add(this.textBoxWordDescription);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -645,5 +656,6 @@
         private Label label11;
         private Label label10;
         private Label label9;
+        private RichTextBox textBoxWordDescription;
     }
 }

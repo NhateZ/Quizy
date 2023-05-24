@@ -4,10 +4,12 @@ using Quizy.Quiz_Form_Template.Snake;
 using System.Drawing.Drawing2D;
 using System.Reflection;
 
+
 namespace Quizy
 {
     public partial class FormStart : Form
     {
+        
         public FormStart()
         {
             InitializeComponent();
@@ -24,14 +26,15 @@ namespace Quizy
 
         private void pictureBoxCustomQuiz_Click(object sender, EventArgs e)
         {
-            /*SnakeGame snakeGame= new SnakeGame();
-            this.Hide();
-            snakeGame.Closed += (s, args) => this.Close();
-            snakeGame.Show();*/
-            PopQuizGameQuiz snakeGame = new PopQuizGameQuiz();
+            SnakeGame snakeGame= new SnakeGame();
             this.Hide();
             snakeGame.Closed += (s, args) => this.Close();
             snakeGame.Show();
+            /*FlashMemoryCardGameQuiz snakeGame = new FlashMemoryCardGameQuiz();
+            this.Hide();
+            snakeGame.Closed += (s, args) => this.Close();
+            snakeGame.Show();*/
+            
         }
 
         private void pictureBoxCustomQuizCreator_Click(object sender, EventArgs e)
@@ -44,7 +47,8 @@ namespace Quizy
 
         private void pictureBoxTutorialCustomQuiz_Click(object sender, EventArgs e)
         {
-
+            
         }
+        
     }
 }
