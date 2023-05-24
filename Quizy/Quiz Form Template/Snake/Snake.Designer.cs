@@ -47,6 +47,8 @@
             // pictureBoxGame
             // 
             this.pictureBoxGame.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pictureBoxGame.BackgroundImage = global::Quizy.Properties.Resources.background_main_quiz;
+            this.pictureBoxGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxGame.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxGame.Name = "pictureBoxGame";
             this.pictureBoxGame.Size = new System.Drawing.Size(658, 545);
@@ -150,6 +152,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Quizy.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.labelTextTimer);

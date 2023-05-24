@@ -19,6 +19,7 @@ namespace Quizy.Quiz_Form_Template
         public int Correct = 0;
         public int point = 100;
         public int numberOfWords {get; set; }
+        public bool isFinished = false;
 
         public GhicitoareaGameQuiz()
         {
