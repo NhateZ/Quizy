@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quizy.program_interpretor;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,12 +14,15 @@ namespace Quizy.Quiz_Form_Template
 {
     public partial class GhicitoareaGameQuiz : Form
     {
-        public string[] WordCollection = { "Alfabet", "Analfabet", "Shaorma" };
+        public string word1;
+        public string word2;
+        public string word3;
+        public string word4;
         public string GuessWord { get; set; }
         public int Mistake = 0;
         public int Correct = 0;
         public int point = 100;
-        public int numberOfWords {get; set; }
+        public int numberOfWords { get; set; }
         public bool isFinished = false;
 
         public GhicitoareaGameQuiz()
@@ -29,19 +33,32 @@ namespace Quizy.Quiz_Form_Template
 
         private void GhicitoareaGameQuiz_Load(object sender, EventArgs e)
         {
-            //WordCollection = 
-            /*
-             * 
-             * Insert Database...
-            */
             Random randomNumber = new Random();
-            GuessWord = WordCollection[randomNumber.NextInt64(0, numberOfWords)];
+            int mem = randomNumber.Next(1, 5);
+            switch (mem)
+            {
+                case 1:
+                    GuessWord = word1;
+                    break;
+                case 2:
+                    GuessWord = word2;
+                    break;
+                case 3:
+                    GuessWord = word3;
+                    break;
+                case 4:
+                    GuessWord = word4;
+                    break;
+                default:
+                    GuessWord = word1;
+                    break;
 
-            for(int i = 12;i > GuessWord.Length; i--) 
+            }
+            for (int i = 12; i > GuessWord.Length; i--)
             {
                 HideLabel(i);
             }
-           
+
 
 
 
@@ -52,43 +69,43 @@ namespace Quizy.Quiz_Form_Template
             switch (index)
             {
                 case 1:
-                    label1.Visible= false;
-                break;
+                    label1.Visible = false;
+                    break;
                 case 2:
-                    label2.Visible= false;
-                break;
+                    label2.Visible = false;
+                    break;
                 case 3:
-                    label3.Visible= false;
-                break;
+                    label3.Visible = false;
+                    break;
                 case 4:
-                    label4.Visible= false;
-                break;
+                    label4.Visible = false;
+                    break;
                 case 5:
-                    label5.Visible= false;  
-                break;
+                    label5.Visible = false;
+                    break;
                 case 6:
-                    label6.Visible= false;
-                break;
+                    label6.Visible = false;
+                    break;
                 case 7:
-                    label7.Visible= false;
-                break;
+                    label7.Visible = false;
+                    break;
                 case 8:
                     label8.Visible = false;
-                break;
+                    break;
                 case 9:
-                    label9.Visible= false;
-                break;
+                    label9.Visible = false;
+                    break;
                 case 10:
-                    label10.Visible= false;
-                break;
+                    label10.Visible = false;
+                    break;
                 case 11:
-                    label11.Visible= false;
-                break;
+                    label11.Visible = false;
+                    break;
                 case 12:
-                    label12.Visible= false;
-                break;
+                    label12.Visible = false;
+                    break;
 
-            }     
+            }
         }
         private void ShowLetter(int index, char c)
         {
@@ -121,7 +138,7 @@ namespace Quizy.Quiz_Form_Template
                 case 9:
                     label9.Text = c.ToString();
                     break;
-                case 10:    
+                case 10:
                     label10.Text = c.ToString();
                     break;
                 case 11:
@@ -133,44 +150,49 @@ namespace Quizy.Quiz_Form_Template
 
             }
             Correct++;
-            if(Correct == GuessWord.Length)
+            if (Correct == GuessWord.Length)
             {
                 MessageBox.Show($"Ai câștigat!\nAi obținut {point}  puuncte", "Ai câștigat!");
+                interpretor intr = new interpretor();
+                if (Mistake != 0)
+                    intr.addPoints(100 / Mistake);
+                else if (Mistake == 0)
+                    intr.addPoints(100);
 
             }
         }
         private void ChangeStateMisake(int mistakes)
         {
-            switch(mistakes)
+            switch (mistakes)
             {
                 case 1:
 
-                break;
+                    break;
                 case 2:
 
-                break;
+                    break;
                 case 3:
-                    
-                break;
+
+                    break;
                 case 4:
-                
-                break;
+
+                    break;
                 case 5:
-                    
-                break;
+
+                    break;
                 case 6:
                     //game Over;
                     MessageBox.Show("Ai pierdut!", "Ai pierdut!");
-                break;
+                    break;
             }
             point -= 15;
         }
 
         private void pictureBoxA_Click(object sender, EventArgs e)
         {
-            if(GuessWord.Contains('a') || GuessWord.Contains('A'))
+            if (GuessWord.Contains('a') || GuessWord.Contains('A'))
             {
-                for(int i = 0; i <= GuessWord.Length - 1; i++)
+                for (int i = 0; i <= GuessWord.Length - 1; i++)
                 {
                     if (GuessWord[i] == 'a' || GuessWord[i] == 'A')
                     {
@@ -194,7 +216,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     if (GuessWord[i] == 'b' || GuessWord[i] == 'B')
                     {
-                        ShowLetter(i+1, GuessWord[i]);
+                        ShowLetter(i + 1, GuessWord[i]);
                     }
                 }
             }

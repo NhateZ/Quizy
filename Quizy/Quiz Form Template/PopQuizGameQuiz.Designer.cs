@@ -28,135 +28,142 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.textBoxQuestion = new System.Windows.Forms.RichTextBox();
-            this.answerRed = new System.Windows.Forms.RichTextBox();
-            this.answerGreen = new System.Windows.Forms.RichTextBox();
-            this.answerBlue = new System.Windows.Forms.RichTextBox();
-            this.answerYellow = new System.Windows.Forms.RichTextBox();
-            this.timer = new System.Windows.Forms.Timer(this.components);
-            this.labelTimerText = new System.Windows.Forms.Label();
-            this.labelTimer = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            textBoxQuestion = new RichTextBox();
+            answerRed = new RichTextBox();
+            answerGreen = new RichTextBox();
+            answerBlue = new RichTextBox();
+            answerYellow = new RichTextBox();
+            timer = new System.Windows.Forms.Timer(components);
+            labelTimerText = new Label();
+            labelTimer = new Label();
+            SuspendLayout();
             // 
             // textBoxQuestion
             // 
-            this.textBoxQuestion.Font = new System.Drawing.Font("Microsoft Tai Le", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxQuestion.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.textBoxQuestion.Location = new System.Drawing.Point(45, 25);
-            this.textBoxQuestion.Name = "textBoxQuestion";
-            this.textBoxQuestion.ReadOnly = true;
-            this.textBoxQuestion.Size = new System.Drawing.Size(795, 243);
-            this.textBoxQuestion.TabIndex = 0;
-            this.textBoxQuestion.Text = "Question";
+            textBoxQuestion.Font = new Font("Microsoft Tai Le", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxQuestion.ImeMode = ImeMode.On;
+            textBoxQuestion.Location = new Point(51, 33);
+            textBoxQuestion.Margin = new Padding(3, 4, 3, 4);
+            textBoxQuestion.Name = "textBoxQuestion";
+            textBoxQuestion.ReadOnly = true;
+            textBoxQuestion.Size = new Size(908, 323);
+            textBoxQuestion.TabIndex = 0;
+            textBoxQuestion.Text = "Question";
             // 
             // answerRed
             // 
-            this.answerRed.BackColor = System.Drawing.Color.Red;
-            this.answerRed.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.answerRed.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.answerRed.ForeColor = System.Drawing.Color.White;
-            this.answerRed.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.answerRed.Location = new System.Drawing.Point(100, 300);
-            this.answerRed.Name = "answerRed";
-            this.answerRed.ReadOnly = true;
-            this.answerRed.Size = new System.Drawing.Size(280, 110);
-            this.answerRed.TabIndex = 1;
-            this.answerRed.Text = "Answer Red";
-            this.answerRed.Click += new System.EventHandler(this.answerRed_Click);
+            answerRed.BackColor = Color.Red;
+            answerRed.BorderStyle = BorderStyle.None;
+            answerRed.Font = new Font("Microsoft Tai Le", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            answerRed.ForeColor = Color.White;
+            answerRed.ImeMode = ImeMode.On;
+            answerRed.Location = new Point(114, 400);
+            answerRed.Margin = new Padding(3, 4, 3, 4);
+            answerRed.Name = "answerRed";
+            answerRed.ReadOnly = true;
+            answerRed.Size = new Size(320, 147);
+            answerRed.TabIndex = 1;
+            answerRed.Text = "Answer Red";
+            answerRed.Click += answerRed_Click;
             // 
             // answerGreen
             // 
-            this.answerGreen.BackColor = System.Drawing.Color.Green;
-            this.answerGreen.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.answerGreen.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.answerGreen.ForeColor = System.Drawing.Color.White;
-            this.answerGreen.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.answerGreen.Location = new System.Drawing.Point(520, 300);
-            this.answerGreen.Name = "answerGreen";
-            this.answerGreen.ReadOnly = true;
-            this.answerGreen.Size = new System.Drawing.Size(280, 110);
-            this.answerGreen.TabIndex = 2;
-            this.answerGreen.Text = "Answer Green";
-            this.answerGreen.Click += new System.EventHandler(this.answerGreen_Click);
+            answerGreen.BackColor = Color.Green;
+            answerGreen.BorderStyle = BorderStyle.None;
+            answerGreen.Font = new Font("Microsoft Tai Le", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            answerGreen.ForeColor = Color.White;
+            answerGreen.ImeMode = ImeMode.On;
+            answerGreen.Location = new Point(594, 400);
+            answerGreen.Margin = new Padding(3, 4, 3, 4);
+            answerGreen.Name = "answerGreen";
+            answerGreen.ReadOnly = true;
+            answerGreen.Size = new Size(320, 147);
+            answerGreen.TabIndex = 2;
+            answerGreen.Text = "Answer Green";
+            answerGreen.Click += answerGreen_Click;
             // 
             // answerBlue
             // 
-            this.answerBlue.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.answerBlue.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.answerBlue.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.answerBlue.ForeColor = System.Drawing.Color.White;
-            this.answerBlue.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.answerBlue.Location = new System.Drawing.Point(100, 430);
-            this.answerBlue.Name = "answerBlue";
-            this.answerBlue.ReadOnly = true;
-            this.answerBlue.Size = new System.Drawing.Size(280, 110);
-            this.answerBlue.TabIndex = 3;
-            this.answerBlue.Text = "Answer Blue";
-            this.answerBlue.Click += new System.EventHandler(this.answerBlue_Click);
+            answerBlue.BackColor = Color.LightSkyBlue;
+            answerBlue.BorderStyle = BorderStyle.None;
+            answerBlue.Font = new Font("Microsoft Tai Le", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            answerBlue.ForeColor = Color.White;
+            answerBlue.ImeMode = ImeMode.On;
+            answerBlue.Location = new Point(114, 573);
+            answerBlue.Margin = new Padding(3, 4, 3, 4);
+            answerBlue.Name = "answerBlue";
+            answerBlue.ReadOnly = true;
+            answerBlue.Size = new Size(320, 147);
+            answerBlue.TabIndex = 3;
+            answerBlue.Text = "Answer Blue";
+            answerBlue.Click += answerBlue_Click;
             // 
             // answerYellow
             // 
-            this.answerYellow.BackColor = System.Drawing.Color.Gold;
-            this.answerYellow.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.answerYellow.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.answerYellow.ForeColor = System.Drawing.Color.White;
-            this.answerYellow.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.answerYellow.Location = new System.Drawing.Point(520, 430);
-            this.answerYellow.Name = "answerYellow";
-            this.answerYellow.ReadOnly = true;
-            this.answerYellow.Size = new System.Drawing.Size(280, 110);
-            this.answerYellow.TabIndex = 4;
-            this.answerYellow.Text = "Answer Yellow";
-            this.answerYellow.Click += new System.EventHandler(this.answerYellow_Click);
+            answerYellow.BackColor = Color.Gold;
+            answerYellow.BorderStyle = BorderStyle.None;
+            answerYellow.Font = new Font("Microsoft Tai Le", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            answerYellow.ForeColor = Color.White;
+            answerYellow.ImeMode = ImeMode.On;
+            answerYellow.Location = new Point(594, 573);
+            answerYellow.Margin = new Padding(3, 4, 3, 4);
+            answerYellow.Name = "answerYellow";
+            answerYellow.ReadOnly = true;
+            answerYellow.Size = new Size(320, 147);
+            answerYellow.TabIndex = 4;
+            answerYellow.Text = "Answer Yellow";
+            answerYellow.Click += answerYellow_Click;
             // 
             // timer
             // 
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            timer.Tick += timer_Tick;
             // 
             // labelTimerText
             // 
-            this.labelTimerText.AutoSize = true;
-            this.labelTimerText.BackColor = System.Drawing.Color.Transparent;
-            this.labelTimerText.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTimerText.ForeColor = System.Drawing.Color.White;
-            this.labelTimerText.Location = new System.Drawing.Point(404, 271);
-            this.labelTimerText.Name = "labelTimerText";
-            this.labelTimerText.Size = new System.Drawing.Size(82, 34);
-            this.labelTimerText.TabIndex = 5;
-            this.labelTimerText.Text = "Timer";
+            labelTimerText.AutoSize = true;
+            labelTimerText.BackColor = Color.Transparent;
+            labelTimerText.Font = new Font("Microsoft Tai Le", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTimerText.ForeColor = Color.White;
+            labelTimerText.Location = new Point(462, 361);
+            labelTimerText.Name = "labelTimerText";
+            labelTimerText.Size = new Size(104, 44);
+            labelTimerText.TabIndex = 5;
+            labelTimerText.Text = "Timer";
             // 
             // labelTimer
             // 
-            this.labelTimer.AutoSize = true;
-            this.labelTimer.BackColor = System.Drawing.Color.Transparent;
-            this.labelTimer.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTimer.ForeColor = System.Drawing.Color.White;
-            this.labelTimer.Location = new System.Drawing.Point(404, 305);
-            this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(98, 34);
-            this.labelTimer.TabIndex = 6;
-            this.labelTimer.Text = "time=?";
+            labelTimer.AutoSize = true;
+            labelTimer.BackColor = Color.Transparent;
+            labelTimer.Font = new Font("Microsoft Tai Le", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTimer.ForeColor = Color.White;
+            labelTimer.Location = new Point(462, 407);
+            labelTimer.Name = "labelTimer";
+            labelTimer.Size = new Size(124, 44);
+            labelTimer.TabIndex = 6;
+            labelTimer.Text = "time=?";
             // 
             // PopQuizGameQuiz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Quizy.Properties.Resources.Background_pop_quiz;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(884, 561);
-            this.Controls.Add(this.labelTimer);
-            this.Controls.Add(this.labelTimerText);
-            this.Controls.Add(this.answerYellow);
-            this.Controls.Add(this.answerBlue);
-            this.Controls.Add(this.answerGreen);
-            this.Controls.Add(this.answerRed);
-            this.Controls.Add(this.textBoxQuestion);
-            this.Name = "PopQuizGameQuiz";
-            this.Text = "Quizy - Pop Quiz";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Background_pop_quiz;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1010, 748);
+            Controls.Add(labelTimer);
+            Controls.Add(labelTimerText);
+            Controls.Add(answerYellow);
+            Controls.Add(answerBlue);
+            Controls.Add(answerGreen);
+            Controls.Add(answerRed);
+            Controls.Add(textBoxQuestion);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "PopQuizGameQuiz";
+            Text = "Quizy - Pop Quiz";
+            Load += PopQuizGameQuiz_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -28,592 +28,645 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBoxA = new System.Windows.Forms.PictureBox();
-            this.pictureBoxB = new System.Windows.Forms.PictureBox();
-            this.pictureBoxD = new System.Windows.Forms.PictureBox();
-            this.pictureBoxC = new System.Windows.Forms.PictureBox();
-            this.pictureBoxH = new System.Windows.Forms.PictureBox();
-            this.pictureBoxG = new System.Windows.Forms.PictureBox();
-            this.pictureBoxF = new System.Windows.Forms.PictureBox();
-            this.pictureBoxE = new System.Windows.Forms.PictureBox();
-            this.pictureBoxL = new System.Windows.Forms.PictureBox();
-            this.pictureBoxJ = new System.Windows.Forms.PictureBox();
-            this.pictureBoxI = new System.Windows.Forms.PictureBox();
-            this.pictureBoxK = new System.Windows.Forms.PictureBox();
-            this.pictureBoxW = new System.Windows.Forms.PictureBox();
-            this.pictureBoxV = new System.Windows.Forms.PictureBox();
-            this.pictureBoxU = new System.Windows.Forms.PictureBox();
-            this.pictureBoxX = new System.Windows.Forms.PictureBox();
-            this.pictureBoxT = new System.Windows.Forms.PictureBox();
-            this.pictureBoxS = new System.Windows.Forms.PictureBox();
-            this.pictureBoxR = new System.Windows.Forms.PictureBox();
-            this.pictureBoxQ = new System.Windows.Forms.PictureBox();
-            this.pictureBoxP = new System.Windows.Forms.PictureBox();
-            this.pictureBoxO = new System.Windows.Forms.PictureBox();
-            this.pictureBoxN = new System.Windows.Forms.PictureBox();
-            this.pictureBoxM = new System.Windows.Forms.PictureBox();
-            this.pictureBoxZ = new System.Windows.Forms.PictureBox();
-            this.pictureBoxY = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBoxWordDescription = new System.Windows.Forms.RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxL)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJ)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxI)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxK)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxW)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQ)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxO)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZ)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).BeginInit();
-            this.SuspendLayout();
+            pictureBoxA = new PictureBox();
+            pictureBoxB = new PictureBox();
+            pictureBoxD = new PictureBox();
+            pictureBoxC = new PictureBox();
+            pictureBoxH = new PictureBox();
+            pictureBoxG = new PictureBox();
+            pictureBoxF = new PictureBox();
+            pictureBoxE = new PictureBox();
+            pictureBoxL = new PictureBox();
+            pictureBoxJ = new PictureBox();
+            pictureBoxI = new PictureBox();
+            pictureBoxK = new PictureBox();
+            pictureBoxW = new PictureBox();
+            pictureBoxV = new PictureBox();
+            pictureBoxU = new PictureBox();
+            pictureBoxX = new PictureBox();
+            pictureBoxT = new PictureBox();
+            pictureBoxS = new PictureBox();
+            pictureBoxR = new PictureBox();
+            pictureBoxQ = new PictureBox();
+            pictureBoxP = new PictureBox();
+            pictureBoxO = new PictureBox();
+            pictureBoxN = new PictureBox();
+            pictureBoxM = new PictureBox();
+            pictureBoxZ = new PictureBox();
+            pictureBoxY = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            textBoxWordDescription = new RichTextBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxA).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxB).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxD).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxC).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxH).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxG).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxF).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxE).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxL).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxJ).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxI).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxK).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxW).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxV).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxU).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxX).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxT).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxS).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxR).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxQ).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxP).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxO).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxN).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxM).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxZ).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxY).BeginInit();
+            SuspendLayout();
             // 
             // pictureBoxA
             // 
-            this.pictureBoxA.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxA.BackgroundImage = global::Quizy.Properties.Resources.letter_a;
-            this.pictureBoxA.Location = new System.Drawing.Point(100, 260);
-            this.pictureBoxA.Name = "pictureBoxA";
-            this.pictureBoxA.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxA.TabIndex = 0;
-            this.pictureBoxA.TabStop = false;
-            this.pictureBoxA.Click += new System.EventHandler(this.pictureBoxA_Click);
+            pictureBoxA.BackColor = SystemColors.AppWorkspace;
+            pictureBoxA.BackgroundImage = Properties.Resources.letter_a;
+            pictureBoxA.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxA.Location = new Point(114, 347);
+            pictureBoxA.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxA.Name = "pictureBoxA";
+            pictureBoxA.Size = new Size(46, 53);
+            pictureBoxA.TabIndex = 0;
+            pictureBoxA.TabStop = false;
+            pictureBoxA.Click += pictureBoxA_Click;
             // 
             // pictureBoxB
             // 
-            this.pictureBoxB.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxB.BackgroundImage = global::Quizy.Properties.Resources.letter_b;
-            this.pictureBoxB.Location = new System.Drawing.Point(160, 260);
-            this.pictureBoxB.Name = "pictureBoxB";
-            this.pictureBoxB.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxB.TabIndex = 1;
-            this.pictureBoxB.TabStop = false;
-            this.pictureBoxB.Click += new System.EventHandler(this.pictureBoxB_Click);
+            pictureBoxB.BackColor = SystemColors.AppWorkspace;
+            pictureBoxB.BackgroundImage = Properties.Resources.letter_b;
+            pictureBoxB.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxB.Location = new Point(183, 347);
+            pictureBoxB.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxB.Name = "pictureBoxB";
+            pictureBoxB.Size = new Size(46, 53);
+            pictureBoxB.TabIndex = 1;
+            pictureBoxB.TabStop = false;
+            pictureBoxB.Click += pictureBoxB_Click;
             // 
             // pictureBoxD
             // 
-            this.pictureBoxD.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxD.BackgroundImage = global::Quizy.Properties.Resources.letter_d;
-            this.pictureBoxD.Location = new System.Drawing.Point(280, 260);
-            this.pictureBoxD.Name = "pictureBoxD";
-            this.pictureBoxD.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxD.TabIndex = 3;
-            this.pictureBoxD.TabStop = false;
-            this.pictureBoxD.Click += new System.EventHandler(this.pictureBoxD_Click);
+            pictureBoxD.BackColor = SystemColors.AppWorkspace;
+            pictureBoxD.BackgroundImage = Properties.Resources.letter_d;
+            pictureBoxD.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxD.Location = new Point(320, 347);
+            pictureBoxD.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxD.Name = "pictureBoxD";
+            pictureBoxD.Size = new Size(46, 53);
+            pictureBoxD.TabIndex = 3;
+            pictureBoxD.TabStop = false;
+            pictureBoxD.Click += pictureBoxD_Click;
             // 
             // pictureBoxC
             // 
-            this.pictureBoxC.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxC.BackgroundImage = global::Quizy.Properties.Resources.letter_c;
-            this.pictureBoxC.Location = new System.Drawing.Point(220, 260);
-            this.pictureBoxC.Name = "pictureBoxC";
-            this.pictureBoxC.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxC.TabIndex = 2;
-            this.pictureBoxC.TabStop = false;
-            this.pictureBoxC.Click += new System.EventHandler(this.pictureBoxC_Click);
+            pictureBoxC.BackColor = SystemColors.AppWorkspace;
+            pictureBoxC.BackgroundImage = Properties.Resources.letter_c;
+            pictureBoxC.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxC.Location = new Point(251, 347);
+            pictureBoxC.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxC.Name = "pictureBoxC";
+            pictureBoxC.Size = new Size(46, 53);
+            pictureBoxC.TabIndex = 2;
+            pictureBoxC.TabStop = false;
+            pictureBoxC.Click += pictureBoxC_Click;
             // 
             // pictureBoxH
             // 
-            this.pictureBoxH.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxH.BackgroundImage = global::Quizy.Properties.Resources.letter_h;
-            this.pictureBoxH.Location = new System.Drawing.Point(520, 260);
-            this.pictureBoxH.Name = "pictureBoxH";
-            this.pictureBoxH.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxH.TabIndex = 7;
-            this.pictureBoxH.TabStop = false;
-            this.pictureBoxH.Click += new System.EventHandler(this.pictureBoxH_Click);
+            pictureBoxH.BackColor = SystemColors.AppWorkspace;
+            pictureBoxH.BackgroundImage = Properties.Resources.letter_h;
+            pictureBoxH.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxH.Location = new Point(594, 347);
+            pictureBoxH.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxH.Name = "pictureBoxH";
+            pictureBoxH.Size = new Size(46, 53);
+            pictureBoxH.TabIndex = 7;
+            pictureBoxH.TabStop = false;
+            pictureBoxH.Click += pictureBoxH_Click;
             // 
             // pictureBoxG
             // 
-            this.pictureBoxG.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxG.BackgroundImage = global::Quizy.Properties.Resources.letter_g;
-            this.pictureBoxG.Location = new System.Drawing.Point(460, 260);
-            this.pictureBoxG.Name = "pictureBoxG";
-            this.pictureBoxG.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxG.TabIndex = 6;
-            this.pictureBoxG.TabStop = false;
-            this.pictureBoxG.Click += new System.EventHandler(this.pictureBoxG_Click);
+            pictureBoxG.BackColor = SystemColors.AppWorkspace;
+            pictureBoxG.BackgroundImage = Properties.Resources.letter_g;
+            pictureBoxG.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxG.Location = new Point(526, 347);
+            pictureBoxG.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxG.Name = "pictureBoxG";
+            pictureBoxG.Size = new Size(46, 53);
+            pictureBoxG.TabIndex = 6;
+            pictureBoxG.TabStop = false;
+            pictureBoxG.Click += pictureBoxG_Click;
             // 
             // pictureBoxF
             // 
-            this.pictureBoxF.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxF.BackgroundImage = global::Quizy.Properties.Resources.letter_f;
-            this.pictureBoxF.Location = new System.Drawing.Point(400, 260);
-            this.pictureBoxF.Name = "pictureBoxF";
-            this.pictureBoxF.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxF.TabIndex = 5;
-            this.pictureBoxF.TabStop = false;
-            this.pictureBoxF.Click += new System.EventHandler(this.pictureBoxF_Click);
+            pictureBoxF.BackColor = SystemColors.AppWorkspace;
+            pictureBoxF.BackgroundImage = Properties.Resources.letter_f;
+            pictureBoxF.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxF.Location = new Point(457, 347);
+            pictureBoxF.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxF.Name = "pictureBoxF";
+            pictureBoxF.Size = new Size(46, 53);
+            pictureBoxF.TabIndex = 5;
+            pictureBoxF.TabStop = false;
+            pictureBoxF.Click += pictureBoxF_Click;
             // 
             // pictureBoxE
             // 
-            this.pictureBoxE.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxE.BackgroundImage = global::Quizy.Properties.Resources.letter_e;
-            this.pictureBoxE.Location = new System.Drawing.Point(340, 260);
-            this.pictureBoxE.Name = "pictureBoxE";
-            this.pictureBoxE.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxE.TabIndex = 4;
-            this.pictureBoxE.TabStop = false;
-            this.pictureBoxE.Click += new System.EventHandler(this.pictureBoxE_Click);
+            pictureBoxE.BackColor = SystemColors.AppWorkspace;
+            pictureBoxE.BackgroundImage = Properties.Resources.letter_e;
+            pictureBoxE.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxE.Location = new Point(389, 347);
+            pictureBoxE.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxE.Name = "pictureBoxE";
+            pictureBoxE.Size = new Size(46, 53);
+            pictureBoxE.TabIndex = 4;
+            pictureBoxE.TabStop = false;
+            pictureBoxE.Click += pictureBoxE_Click;
             // 
             // pictureBoxL
             // 
-            this.pictureBoxL.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxL.BackgroundImage = global::Quizy.Properties.Resources.letter_l;
-            this.pictureBoxL.Location = new System.Drawing.Point(760, 260);
-            this.pictureBoxL.Name = "pictureBoxL";
-            this.pictureBoxL.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxL.TabIndex = 8;
-            this.pictureBoxL.TabStop = false;
-            this.pictureBoxL.Click += new System.EventHandler(this.pictureBoxL_Click);
+            pictureBoxL.BackColor = SystemColors.AppWorkspace;
+            pictureBoxL.BackgroundImage = Properties.Resources.letter_l;
+            pictureBoxL.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxL.Location = new Point(869, 347);
+            pictureBoxL.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxL.Name = "pictureBoxL";
+            pictureBoxL.Size = new Size(46, 53);
+            pictureBoxL.TabIndex = 8;
+            pictureBoxL.TabStop = false;
+            pictureBoxL.Click += pictureBoxL_Click;
             // 
             // pictureBoxJ
             // 
-            this.pictureBoxJ.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxJ.BackgroundImage = global::Quizy.Properties.Resources.letter_j;
-            this.pictureBoxJ.Location = new System.Drawing.Point(640, 260);
-            this.pictureBoxJ.Name = "pictureBoxJ";
-            this.pictureBoxJ.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxJ.TabIndex = 10;
-            this.pictureBoxJ.TabStop = false;
-            this.pictureBoxJ.Click += new System.EventHandler(this.pictureBoxJ_Click);
+            pictureBoxJ.BackColor = SystemColors.AppWorkspace;
+            pictureBoxJ.BackgroundImage = Properties.Resources.letter_j;
+            pictureBoxJ.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxJ.Location = new Point(731, 347);
+            pictureBoxJ.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxJ.Name = "pictureBoxJ";
+            pictureBoxJ.Size = new Size(46, 53);
+            pictureBoxJ.TabIndex = 10;
+            pictureBoxJ.TabStop = false;
+            pictureBoxJ.Click += pictureBoxJ_Click;
             // 
             // pictureBoxI
             // 
-            this.pictureBoxI.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxI.BackgroundImage = global::Quizy.Properties.Resources.letter_i;
-            this.pictureBoxI.Location = new System.Drawing.Point(580, 260);
-            this.pictureBoxI.Name = "pictureBoxI";
-            this.pictureBoxI.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxI.TabIndex = 9;
-            this.pictureBoxI.TabStop = false;
-            this.pictureBoxI.Click += new System.EventHandler(this.pictureBoxI_Click);
+            pictureBoxI.BackColor = SystemColors.AppWorkspace;
+            pictureBoxI.BackgroundImage = Properties.Resources.letter_i;
+            pictureBoxI.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxI.Location = new Point(663, 347);
+            pictureBoxI.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxI.Name = "pictureBoxI";
+            pictureBoxI.Size = new Size(46, 53);
+            pictureBoxI.TabIndex = 9;
+            pictureBoxI.TabStop = false;
+            pictureBoxI.Click += pictureBoxI_Click;
             // 
             // pictureBoxK
             // 
-            this.pictureBoxK.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxK.BackgroundImage = global::Quizy.Properties.Resources.letter_k;
-            this.pictureBoxK.Location = new System.Drawing.Point(700, 260);
-            this.pictureBoxK.Name = "pictureBoxK";
-            this.pictureBoxK.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxK.TabIndex = 11;
-            this.pictureBoxK.TabStop = false;
-            this.pictureBoxK.Click += new System.EventHandler(this.pictureBoxK_Click);
+            pictureBoxK.BackColor = SystemColors.AppWorkspace;
+            pictureBoxK.BackgroundImage = Properties.Resources.letter_k;
+            pictureBoxK.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxK.Location = new Point(800, 347);
+            pictureBoxK.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxK.Name = "pictureBoxK";
+            pictureBoxK.Size = new Size(46, 53);
+            pictureBoxK.TabIndex = 11;
+            pictureBoxK.TabStop = false;
+            pictureBoxK.Click += pictureBoxK_Click;
             // 
             // pictureBoxW
             // 
-            this.pictureBoxW.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxW.BackgroundImage = global::Quizy.Properties.Resources.letter_w;
-            this.pictureBoxW.Location = new System.Drawing.Point(700, 315);
-            this.pictureBoxW.Name = "pictureBoxW";
-            this.pictureBoxW.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxW.TabIndex = 23;
-            this.pictureBoxW.TabStop = false;
-            this.pictureBoxW.Click += new System.EventHandler(this.pictureBoxW_Click);
+            pictureBoxW.BackColor = SystemColors.AppWorkspace;
+            pictureBoxW.BackgroundImage = Properties.Resources.letter_w;
+            pictureBoxW.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxW.Location = new Point(800, 420);
+            pictureBoxW.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxW.Name = "pictureBoxW";
+            pictureBoxW.Size = new Size(46, 53);
+            pictureBoxW.TabIndex = 23;
+            pictureBoxW.TabStop = false;
+            pictureBoxW.Click += pictureBoxW_Click;
             // 
             // pictureBoxV
             // 
-            this.pictureBoxV.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxV.BackgroundImage = global::Quizy.Properties.Resources.letter_v;
-            this.pictureBoxV.Location = new System.Drawing.Point(640, 315);
-            this.pictureBoxV.Name = "pictureBoxV";
-            this.pictureBoxV.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxV.TabIndex = 22;
-            this.pictureBoxV.TabStop = false;
-            this.pictureBoxV.Click += new System.EventHandler(this.pictureBoxV_Click);
+            pictureBoxV.BackColor = SystemColors.AppWorkspace;
+            pictureBoxV.BackgroundImage = Properties.Resources.letter_v;
+            pictureBoxV.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxV.Location = new Point(731, 420);
+            pictureBoxV.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxV.Name = "pictureBoxV";
+            pictureBoxV.Size = new Size(46, 53);
+            pictureBoxV.TabIndex = 22;
+            pictureBoxV.TabStop = false;
+            pictureBoxV.Click += pictureBoxV_Click;
             // 
             // pictureBoxU
             // 
-            this.pictureBoxU.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxU.BackgroundImage = global::Quizy.Properties.Resources.letter_a;
-            this.pictureBoxU.Image = global::Quizy.Properties.Resources.letter_u;
-            this.pictureBoxU.Location = new System.Drawing.Point(580, 315);
-            this.pictureBoxU.Name = "pictureBoxU";
-            this.pictureBoxU.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxU.TabIndex = 21;
-            this.pictureBoxU.TabStop = false;
-            this.pictureBoxU.Click += new System.EventHandler(this.pictureBoxU_Click);
+            pictureBoxU.BackColor = SystemColors.AppWorkspace;
+            pictureBoxU.BackgroundImage = Properties.Resources.letter_a;
+            pictureBoxU.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxU.Image = Properties.Resources.letter_u;
+            pictureBoxU.Location = new Point(663, 420);
+            pictureBoxU.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxU.Name = "pictureBoxU";
+            pictureBoxU.Size = new Size(46, 53);
+            pictureBoxU.TabIndex = 21;
+            pictureBoxU.TabStop = false;
+            pictureBoxU.Click += pictureBoxU_Click;
             // 
             // pictureBoxX
             // 
-            this.pictureBoxX.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxX.BackgroundImage = global::Quizy.Properties.Resources.letter_x;
-            this.pictureBoxX.Location = new System.Drawing.Point(760, 315);
-            this.pictureBoxX.Name = "pictureBoxX";
-            this.pictureBoxX.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxX.TabIndex = 20;
-            this.pictureBoxX.TabStop = false;
-            this.pictureBoxX.Click += new System.EventHandler(this.pictureBoxX_Click);
+            pictureBoxX.BackColor = SystemColors.AppWorkspace;
+            pictureBoxX.BackgroundImage = Properties.Resources.letter_x;
+            pictureBoxX.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxX.Location = new Point(869, 420);
+            pictureBoxX.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxX.Name = "pictureBoxX";
+            pictureBoxX.Size = new Size(46, 53);
+            pictureBoxX.TabIndex = 20;
+            pictureBoxX.TabStop = false;
+            pictureBoxX.Click += pictureBoxX_Click;
             // 
             // pictureBoxT
             // 
-            this.pictureBoxT.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxT.BackgroundImage = global::Quizy.Properties.Resources.letter_t;
-            this.pictureBoxT.Location = new System.Drawing.Point(520, 315);
-            this.pictureBoxT.Name = "pictureBoxT";
-            this.pictureBoxT.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxT.TabIndex = 19;
-            this.pictureBoxT.TabStop = false;
-            this.pictureBoxT.Click += new System.EventHandler(this.pictureBoxT_Click);
+            pictureBoxT.BackColor = SystemColors.AppWorkspace;
+            pictureBoxT.BackgroundImage = Properties.Resources.letter_t;
+            pictureBoxT.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxT.Location = new Point(594, 420);
+            pictureBoxT.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxT.Name = "pictureBoxT";
+            pictureBoxT.Size = new Size(46, 53);
+            pictureBoxT.TabIndex = 19;
+            pictureBoxT.TabStop = false;
+            pictureBoxT.Click += pictureBoxT_Click;
             // 
             // pictureBoxS
             // 
-            this.pictureBoxS.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxS.BackgroundImage = global::Quizy.Properties.Resources.letter_s;
-            this.pictureBoxS.Location = new System.Drawing.Point(460, 315);
-            this.pictureBoxS.Name = "pictureBoxS";
-            this.pictureBoxS.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxS.TabIndex = 18;
-            this.pictureBoxS.TabStop = false;
-            this.pictureBoxS.Click += new System.EventHandler(this.pictureBoxS_Click);
+            pictureBoxS.BackColor = SystemColors.AppWorkspace;
+            pictureBoxS.BackgroundImage = Properties.Resources.letter_s;
+            pictureBoxS.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxS.Location = new Point(526, 420);
+            pictureBoxS.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxS.Name = "pictureBoxS";
+            pictureBoxS.Size = new Size(46, 53);
+            pictureBoxS.TabIndex = 18;
+            pictureBoxS.TabStop = false;
+            pictureBoxS.Click += pictureBoxS_Click;
             // 
             // pictureBoxR
             // 
-            this.pictureBoxR.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxR.BackgroundImage = global::Quizy.Properties.Resources.letter_r;
-            this.pictureBoxR.Location = new System.Drawing.Point(400, 315);
-            this.pictureBoxR.Name = "pictureBoxR";
-            this.pictureBoxR.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxR.TabIndex = 17;
-            this.pictureBoxR.TabStop = false;
-            this.pictureBoxR.Click += new System.EventHandler(this.pictureBoxR_Click);
+            pictureBoxR.BackColor = SystemColors.AppWorkspace;
+            pictureBoxR.BackgroundImage = Properties.Resources.letter_r;
+            pictureBoxR.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxR.Location = new Point(457, 420);
+            pictureBoxR.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxR.Name = "pictureBoxR";
+            pictureBoxR.Size = new Size(46, 53);
+            pictureBoxR.TabIndex = 17;
+            pictureBoxR.TabStop = false;
+            pictureBoxR.Click += pictureBoxR_Click;
             // 
             // pictureBoxQ
             // 
-            this.pictureBoxQ.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxQ.BackgroundImage = global::Quizy.Properties.Resources.letter_q;
-            this.pictureBoxQ.Location = new System.Drawing.Point(340, 315);
-            this.pictureBoxQ.Name = "pictureBoxQ";
-            this.pictureBoxQ.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxQ.TabIndex = 16;
-            this.pictureBoxQ.TabStop = false;
-            this.pictureBoxQ.Click += new System.EventHandler(this.pictureBoxQ_Click);
+            pictureBoxQ.BackColor = SystemColors.AppWorkspace;
+            pictureBoxQ.BackgroundImage = Properties.Resources.letter_q;
+            pictureBoxQ.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxQ.Location = new Point(389, 420);
+            pictureBoxQ.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxQ.Name = "pictureBoxQ";
+            pictureBoxQ.Size = new Size(46, 53);
+            pictureBoxQ.TabIndex = 16;
+            pictureBoxQ.TabStop = false;
+            pictureBoxQ.Click += pictureBoxQ_Click;
             // 
             // pictureBoxP
             // 
-            this.pictureBoxP.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxP.BackgroundImage = global::Quizy.Properties.Resources.letter_p;
-            this.pictureBoxP.Location = new System.Drawing.Point(280, 315);
-            this.pictureBoxP.Name = "pictureBoxP";
-            this.pictureBoxP.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxP.TabIndex = 15;
-            this.pictureBoxP.TabStop = false;
-            this.pictureBoxP.Click += new System.EventHandler(this.pictureBoxP_Click);
+            pictureBoxP.BackColor = SystemColors.AppWorkspace;
+            pictureBoxP.BackgroundImage = Properties.Resources.letter_p;
+            pictureBoxP.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxP.Location = new Point(320, 420);
+            pictureBoxP.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxP.Name = "pictureBoxP";
+            pictureBoxP.Size = new Size(46, 53);
+            pictureBoxP.TabIndex = 15;
+            pictureBoxP.TabStop = false;
+            pictureBoxP.Click += pictureBoxP_Click;
             // 
             // pictureBoxO
             // 
-            this.pictureBoxO.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxO.BackgroundImage = global::Quizy.Properties.Resources.letter_o;
-            this.pictureBoxO.Location = new System.Drawing.Point(220, 315);
-            this.pictureBoxO.Name = "pictureBoxO";
-            this.pictureBoxO.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxO.TabIndex = 14;
-            this.pictureBoxO.TabStop = false;
-            this.pictureBoxO.Click += new System.EventHandler(this.pictureBoxO_Click);
+            pictureBoxO.BackColor = SystemColors.AppWorkspace;
+            pictureBoxO.BackgroundImage = Properties.Resources.letter_o;
+            pictureBoxO.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxO.Location = new Point(251, 420);
+            pictureBoxO.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxO.Name = "pictureBoxO";
+            pictureBoxO.Size = new Size(46, 53);
+            pictureBoxO.TabIndex = 14;
+            pictureBoxO.TabStop = false;
+            pictureBoxO.Click += pictureBoxO_Click;
             // 
             // pictureBoxN
             // 
-            this.pictureBoxN.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxN.BackgroundImage = global::Quizy.Properties.Resources.letter_n;
-            this.pictureBoxN.Location = new System.Drawing.Point(160, 315);
-            this.pictureBoxN.Name = "pictureBoxN";
-            this.pictureBoxN.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxN.TabIndex = 13;
-            this.pictureBoxN.TabStop = false;
-            this.pictureBoxN.Click += new System.EventHandler(this.pictureBoxN_Click);
+            pictureBoxN.BackColor = SystemColors.AppWorkspace;
+            pictureBoxN.BackgroundImage = Properties.Resources.letter_n;
+            pictureBoxN.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxN.Location = new Point(183, 420);
+            pictureBoxN.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxN.Name = "pictureBoxN";
+            pictureBoxN.Size = new Size(46, 53);
+            pictureBoxN.TabIndex = 13;
+            pictureBoxN.TabStop = false;
+            pictureBoxN.Click += pictureBoxN_Click;
             // 
             // pictureBoxM
             // 
-            this.pictureBoxM.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxM.BackgroundImage = global::Quizy.Properties.Resources.letter_m;
-            this.pictureBoxM.Location = new System.Drawing.Point(100, 315);
-            this.pictureBoxM.Name = "pictureBoxM";
-            this.pictureBoxM.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxM.TabIndex = 12;
-            this.pictureBoxM.TabStop = false;
-            this.pictureBoxM.Click += new System.EventHandler(this.pictureBoxM_Click);
+            pictureBoxM.BackColor = SystemColors.AppWorkspace;
+            pictureBoxM.BackgroundImage = Properties.Resources.letter_m;
+            pictureBoxM.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxM.Location = new Point(114, 420);
+            pictureBoxM.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxM.Name = "pictureBoxM";
+            pictureBoxM.Size = new Size(46, 53);
+            pictureBoxM.TabIndex = 12;
+            pictureBoxM.TabStop = false;
+            pictureBoxM.Click += pictureBoxM_Click;
             // 
             // pictureBoxZ
             // 
-            this.pictureBoxZ.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxZ.BackgroundImage = global::Quizy.Properties.Resources.letter_z;
-            this.pictureBoxZ.Location = new System.Drawing.Point(460, 370);
-            this.pictureBoxZ.Name = "pictureBoxZ";
-            this.pictureBoxZ.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxZ.TabIndex = 25;
-            this.pictureBoxZ.TabStop = false;
-            this.pictureBoxZ.Click += new System.EventHandler(this.pictureBoxZ_Click);
+            pictureBoxZ.BackColor = SystemColors.AppWorkspace;
+            pictureBoxZ.BackgroundImage = Properties.Resources.letter_z;
+            pictureBoxZ.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxZ.Location = new Point(526, 493);
+            pictureBoxZ.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxZ.Name = "pictureBoxZ";
+            pictureBoxZ.Size = new Size(46, 53);
+            pictureBoxZ.TabIndex = 25;
+            pictureBoxZ.TabStop = false;
+            pictureBoxZ.Click += pictureBoxZ_Click;
             // 
             // pictureBoxY
             // 
-            this.pictureBoxY.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxY.BackgroundImage = global::Quizy.Properties.Resources.letter_y;
-            this.pictureBoxY.Location = new System.Drawing.Point(400, 370);
-            this.pictureBoxY.Name = "pictureBoxY";
-            this.pictureBoxY.Size = new System.Drawing.Size(40, 40);
-            this.pictureBoxY.TabIndex = 24;
-            this.pictureBoxY.TabStop = false;
-            this.pictureBoxY.Click += new System.EventHandler(this.pictureBoxY_Click);
+            pictureBoxY.BackColor = SystemColors.AppWorkspace;
+            pictureBoxY.BackgroundImage = Properties.Resources.letter_y;
+            pictureBoxY.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxY.Location = new Point(457, 493);
+            pictureBoxY.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxY.Name = "pictureBoxY";
+            pictureBoxY.Size = new Size(46, 53);
+            pictureBoxY.TabIndex = 24;
+            pictureBoxY.TabStop = false;
+            pictureBoxY.Click += pictureBoxY_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(100, 148);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 68);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "_";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(114, 197);
+            label1.Name = "label1";
+            label1.Size = new Size(65, 85);
+            label1.TabIndex = 26;
+            label1.Text = "_";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(160, 148);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 68);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "_";
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(183, 197);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 85);
+            label2.TabIndex = 27;
+            label2.Text = "_";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(220, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 68);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "_";
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(251, 197);
+            label3.Name = "label3";
+            label3.Size = new Size(65, 85);
+            label3.TabIndex = 28;
+            label3.Text = "_";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(280, 148);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 68);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "_";
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(320, 197);
+            label4.Name = "label4";
+            label4.Size = new Size(65, 85);
+            label4.TabIndex = 29;
+            label4.Text = "_";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(520, 148);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 68);
-            this.label8.TabIndex = 33;
-            this.label8.Text = "_";
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(594, 197);
+            label8.Name = "label8";
+            label8.Size = new Size(65, 85);
+            label8.TabIndex = 33;
+            label8.Text = "_";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(460, 148);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 68);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "_";
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(526, 197);
+            label7.Name = "label7";
+            label7.Size = new Size(65, 85);
+            label7.TabIndex = 32;
+            label7.Text = "_";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(400, 148);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 68);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "_";
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(457, 197);
+            label6.Name = "label6";
+            label6.Size = new Size(65, 85);
+            label6.TabIndex = 31;
+            label6.Text = "_";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(340, 148);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 68);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "_";
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(389, 197);
+            label5.Name = "label5";
+            label5.Size = new Size(65, 85);
+            label5.TabIndex = 30;
+            label5.Text = "_";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(760, 148);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 68);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "_";
+            label12.AutoSize = true;
+            label12.BackColor = Color.Transparent;
+            label12.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(869, 197);
+            label12.Name = "label12";
+            label12.Size = new Size(65, 85);
+            label12.TabIndex = 37;
+            label12.Text = "_";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(700, 148);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 68);
-            this.label11.TabIndex = 36;
-            this.label11.Text = "_";
+            label11.AutoSize = true;
+            label11.BackColor = Color.Transparent;
+            label11.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(800, 197);
+            label11.Name = "label11";
+            label11.Size = new Size(65, 85);
+            label11.TabIndex = 36;
+            label11.Text = "_";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(640, 148);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 68);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "_";
+            label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(731, 197);
+            label10.Name = "label10";
+            label10.Size = new Size(65, 85);
+            label10.TabIndex = 35;
+            label10.Text = "_";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(580, 148);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 68);
-            this.label9.TabIndex = 34;
-            this.label9.Text = "_";
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Microsoft Tai Le", 40F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(663, 197);
+            label9.Name = "label9";
+            label9.Size = new Size(65, 85);
+            label9.TabIndex = 34;
+            label9.Text = "_";
             // 
             // textBoxWordDescription
             // 
-            this.textBoxWordDescription.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxWordDescription.Location = new System.Drawing.Point(100, 15);
-            this.textBoxWordDescription.Name = "textBoxWordDescription";
-            this.textBoxWordDescription.Size = new System.Drawing.Size(711, 130);
-            this.textBoxWordDescription.TabIndex = 38;
-            this.textBoxWordDescription.Text = "";
+            textBoxWordDescription.Font = new Font("Microsoft Tai Le", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxWordDescription.Location = new Point(114, 20);
+            textBoxWordDescription.Margin = new Padding(3, 4, 3, 4);
+            textBoxWordDescription.Name = "textBoxWordDescription";
+            textBoxWordDescription.Size = new Size(812, 172);
+            textBoxWordDescription.TabIndex = 38;
+            textBoxWordDescription.Text = "";
             // 
             // GhicitoareaGameQuiz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Quizy.Properties.Resources.background;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(884, 451);
-            this.Controls.Add(this.textBoxWordDescription);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBoxZ);
-            this.Controls.Add(this.pictureBoxY);
-            this.Controls.Add(this.pictureBoxW);
-            this.Controls.Add(this.pictureBoxV);
-            this.Controls.Add(this.pictureBoxU);
-            this.Controls.Add(this.pictureBoxX);
-            this.Controls.Add(this.pictureBoxT);
-            this.Controls.Add(this.pictureBoxS);
-            this.Controls.Add(this.pictureBoxR);
-            this.Controls.Add(this.pictureBoxQ);
-            this.Controls.Add(this.pictureBoxP);
-            this.Controls.Add(this.pictureBoxO);
-            this.Controls.Add(this.pictureBoxN);
-            this.Controls.Add(this.pictureBoxM);
-            this.Controls.Add(this.pictureBoxK);
-            this.Controls.Add(this.pictureBoxJ);
-            this.Controls.Add(this.pictureBoxI);
-            this.Controls.Add(this.pictureBoxL);
-            this.Controls.Add(this.pictureBoxH);
-            this.Controls.Add(this.pictureBoxG);
-            this.Controls.Add(this.pictureBoxF);
-            this.Controls.Add(this.pictureBoxE);
-            this.Controls.Add(this.pictureBoxD);
-            this.Controls.Add(this.pictureBoxC);
-            this.Controls.Add(this.pictureBoxB);
-            this.Controls.Add(this.pictureBoxA);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "GhicitoareaGameQuiz";
-            this.Text = "Ghicitoarea";
-            this.Load += new System.EventHandler(this.GhicitoareaGameQuiz_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxL)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJ)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxI)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxK)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxW)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQ)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxO)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZ)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.background;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1010, 601);
+            Controls.Add(textBoxWordDescription);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(pictureBoxZ);
+            Controls.Add(pictureBoxY);
+            Controls.Add(pictureBoxW);
+            Controls.Add(pictureBoxV);
+            Controls.Add(pictureBoxU);
+            Controls.Add(pictureBoxX);
+            Controls.Add(pictureBoxT);
+            Controls.Add(pictureBoxS);
+            Controls.Add(pictureBoxR);
+            Controls.Add(pictureBoxQ);
+            Controls.Add(pictureBoxP);
+            Controls.Add(pictureBoxO);
+            Controls.Add(pictureBoxN);
+            Controls.Add(pictureBoxM);
+            Controls.Add(pictureBoxK);
+            Controls.Add(pictureBoxJ);
+            Controls.Add(pictureBoxI);
+            Controls.Add(pictureBoxL);
+            Controls.Add(pictureBoxH);
+            Controls.Add(pictureBoxG);
+            Controls.Add(pictureBoxF);
+            Controls.Add(pictureBoxE);
+            Controls.Add(pictureBoxD);
+            Controls.Add(pictureBoxC);
+            Controls.Add(pictureBoxB);
+            Controls.Add(pictureBoxA);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "GhicitoareaGameQuiz";
+            Text = "Ghicitoarea";
+            Load += GhicitoareaGameQuiz_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBoxA).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxB).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxD).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxC).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxH).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxG).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxF).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxE).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxL).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxJ).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxI).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxK).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxW).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxV).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxU).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxX).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxT).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxS).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxR).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxQ).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxP).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxO).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxN).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxM).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxZ).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxY).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

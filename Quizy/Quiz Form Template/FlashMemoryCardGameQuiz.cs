@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quizy.program_interpretor;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +14,8 @@ namespace Quizy.Quiz_Form_Template
 {
     public partial class FlashMemoryCardGameQuiz : Form
     {
-        public int countTime=54;
-
+        public int countTime = 120;
+        private int rightGuessesToMake = 8;
         public string answer1 { get; set; }
         public string object1 { get; set; }
         public string answer2 { get; set; }
@@ -40,6 +41,16 @@ namespace Quizy.Quiz_Form_Template
         //a - answer o - object
         public string firstChar = string.Empty;
 
+        private void checkWin()
+        {
+            rightGuessesToMake--;
+            if (rightGuessesToMake == 0)
+            {
+                MessageBox.Show($"Ai câștigat!", "Ai câștigat!");
+                interpretor intr = new interpretor();
+                intr.addPoints(100);
+            }
+        }
         public FlashMemoryCardGameQuiz()
         {
             InitializeComponent();
@@ -81,7 +92,7 @@ namespace Quizy.Quiz_Form_Template
 
         private void FlashMemoryCardGameQuiz_Load(object sender, EventArgs e)
         {
-            
+
         }
         private void revertOriginal()
         {
@@ -106,10 +117,11 @@ namespace Quizy.Quiz_Form_Template
         private void timer_Tick(object sender, EventArgs e)
         {
             countTime--;
-            time.Text= countTime.ToString();
+            time.Text = countTime.ToString();
             if (countTime == 0)
             {
                 timer.Stop();
+                MessageBox.Show("Ai pierdut!", " Ai pierdut!");
                 this.Close();
             }
         }
@@ -127,10 +139,11 @@ namespace Quizy.Quiz_Form_Template
             else
             {
                 isFirst = true;
-                if(firstChar == "o1")
+                if (firstChar == "o1")
                 {
                     richTextBox1.Visible = false;
                     richTextBox14.Visible = false;
+                    checkWin();
                 }
                 else
                 {
@@ -157,7 +170,7 @@ namespace Quizy.Quiz_Form_Template
 
         async private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
-            richTextBox2.Text = object6;
+            richTextBox2.Text = object2;
             richTextBox2.Font = new Font("Microsoft Tai Le", 16);
             await Task.Delay(500);
             if (isFirst)
@@ -172,6 +185,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox2.Visible = false;
                     richTextBox10.Visible = false;
+                    checkWin();
                 }
                 else
                 {
@@ -213,6 +227,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox3.Visible = false;
                     richTextBox6.Visible = false;
+                    checkWin();
                 }
                 else
                 {
@@ -254,8 +269,9 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox4.Visible = false;
                     richTextBox7.Visible = false;
+                    checkWin();
                 }
-                else 
+                else
                 {
                     revertOriginal();
                     richTextBox1.Text = " X";
@@ -295,8 +311,9 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox5.Visible = false;
                     richTextBox16.Visible = false;
+                    checkWin();
                 }
-                else 
+                else
                 {
                     revertOriginal();
                     richTextBox1.Text = " X";
@@ -336,8 +353,9 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox6.Visible = false;
                     richTextBox3.Visible = false;
+                    checkWin();
                 }
-                else 
+                else
                 {
                     revertOriginal();
                     richTextBox1.Text = " X";
@@ -377,8 +395,9 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox7.Visible = false;
                     richTextBox4.Visible = false;
+                    checkWin();
                 }
-                else 
+                else
                 {
                     revertOriginal();
                     richTextBox1.Text = " X";
@@ -418,6 +437,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox8.Visible = false;
                     richTextBox9.Visible = false;
+                    checkWin();
                 }
                 else
                 {
@@ -459,6 +479,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox2.Visible = false;
                     richTextBox10.Visible = false;
+                    checkWin();
                 }
                 else
                 {
@@ -500,6 +521,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox8.Visible = false;
                     richTextBox9.Visible = false;
+                    checkWin();
                 }
                 else
                 {
@@ -541,6 +563,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox11.Visible = false;
                     richTextBox12.Visible = false;
+                    checkWin();
                 }
                 else
                 {
@@ -582,6 +605,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox11.Visible = false;
                     richTextBox12.Visible = false;
+                    checkWin();
                 }
                 else
                 {
@@ -615,6 +639,7 @@ namespace Quizy.Quiz_Form_Template
             {
                 isFirst = false;
                 firstChar = "a4";
+                checkWin();
             }
             else
             {
@@ -663,6 +688,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox1.Visible = false;
                     richTextBox14.Visible = false;
+                    checkWin();
                 }
                 else
                 {
@@ -696,6 +722,7 @@ namespace Quizy.Quiz_Form_Template
             {
                 isFirst = false;
                 firstChar = "o4";
+                checkWin();
             }
             else
             {
@@ -745,6 +772,7 @@ namespace Quizy.Quiz_Form_Template
                 {
                     richTextBox5.Visible = false;
                     richTextBox16.Visible = false;
+                    checkWin();
                 }
                 else
                 {

@@ -28,264 +28,281 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox8 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox9 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox10 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox11 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox12 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox13 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox14 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox15 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox16 = new System.Windows.Forms.RichTextBox();
-            this.labelTime = new System.Windows.Forms.Label();
-            this.time = new System.Windows.Forms.Label();
-            this.timer = new System.Windows.Forms.Timer(this.components);
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            richTextBox1 = new RichTextBox();
+            richTextBox2 = new RichTextBox();
+            richTextBox3 = new RichTextBox();
+            richTextBox4 = new RichTextBox();
+            richTextBox5 = new RichTextBox();
+            richTextBox6 = new RichTextBox();
+            richTextBox7 = new RichTextBox();
+            richTextBox8 = new RichTextBox();
+            richTextBox9 = new RichTextBox();
+            richTextBox10 = new RichTextBox();
+            richTextBox11 = new RichTextBox();
+            richTextBox12 = new RichTextBox();
+            richTextBox13 = new RichTextBox();
+            richTextBox14 = new RichTextBox();
+            richTextBox15 = new RichTextBox();
+            richTextBox16 = new RichTextBox();
+            labelTime = new Label();
+            time = new Label();
+            timer = new System.Windows.Forms.Timer(components);
+            SuspendLayout();
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox1.Location = new System.Drawing.Point(70, 40);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "aaaaaaaa";
-            this.richTextBox1.Click += new System.EventHandler(this.richTextBox1_TextChanged);
+            richTextBox1.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox1.Location = new Point(80, 53);
+            richTextBox1.Margin = new Padding(3, 4, 3, 4);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
+            richTextBox1.Size = new Size(114, 132);
+            richTextBox1.TabIndex = 8;
+            richTextBox1.Text = "aaaaaaaa";
+            richTextBox1.Click += richTextBox1_TextChanged;
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox2.Location = new System.Drawing.Point(220, 40);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox2.TabIndex = 9;
-            this.richTextBox2.Text = "aaaaaaaa";
-            this.richTextBox2.Click += new System.EventHandler(this.richTextBox2_TextChanged);
+            richTextBox2.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox2.Location = new Point(251, 53);
+            richTextBox2.Margin = new Padding(3, 4, 3, 4);
+            richTextBox2.Name = "richTextBox2";
+            richTextBox2.ReadOnly = true;
+            richTextBox2.Size = new Size(114, 132);
+            richTextBox2.TabIndex = 9;
+            richTextBox2.Text = "aaaaaaaa";
+            richTextBox2.Click += richTextBox2_TextChanged;
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox3.Location = new System.Drawing.Point(370, 40);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.ReadOnly = true;
-            this.richTextBox3.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox3.TabIndex = 10;
-            this.richTextBox3.Text = "aaaaaaaa";
-            this.richTextBox3.Click += new System.EventHandler(this.richTextBox3_TextChanged);
+            richTextBox3.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox3.Location = new Point(423, 53);
+            richTextBox3.Margin = new Padding(3, 4, 3, 4);
+            richTextBox3.Name = "richTextBox3";
+            richTextBox3.ReadOnly = true;
+            richTextBox3.Size = new Size(114, 132);
+            richTextBox3.TabIndex = 10;
+            richTextBox3.Text = "aaaaaaaa";
+            richTextBox3.Click += richTextBox3_TextChanged;
             // 
             // richTextBox4
             // 
-            this.richTextBox4.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox4.Location = new System.Drawing.Point(520, 40);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.ReadOnly = true;
-            this.richTextBox4.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox4.TabIndex = 11;
-            this.richTextBox4.Text = "aaaaaaaa";
-            this.richTextBox4.Click += new System.EventHandler(this.richTextBox4_TextChanged);
+            richTextBox4.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox4.Location = new Point(594, 53);
+            richTextBox4.Margin = new Padding(3, 4, 3, 4);
+            richTextBox4.Name = "richTextBox4";
+            richTextBox4.ReadOnly = true;
+            richTextBox4.Size = new Size(114, 132);
+            richTextBox4.TabIndex = 11;
+            richTextBox4.Text = "aaaaaaaa";
+            richTextBox4.Click += richTextBox4_TextChanged;
             // 
             // richTextBox5
             // 
-            this.richTextBox5.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox5.Location = new System.Drawing.Point(70, 190);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.ReadOnly = true;
-            this.richTextBox5.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox5.TabIndex = 12;
-            this.richTextBox5.Text = "aaaaaaaa";
-            this.richTextBox5.Click += new System.EventHandler(this.richTextBox5_TextChanged);
+            richTextBox5.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox5.Location = new Point(80, 253);
+            richTextBox5.Margin = new Padding(3, 4, 3, 4);
+            richTextBox5.Name = "richTextBox5";
+            richTextBox5.ReadOnly = true;
+            richTextBox5.Size = new Size(114, 132);
+            richTextBox5.TabIndex = 12;
+            richTextBox5.Text = "aaaaaaaa";
+            richTextBox5.Click += richTextBox5_TextChanged;
             // 
             // richTextBox6
             // 
-            this.richTextBox6.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox6.Location = new System.Drawing.Point(220, 190);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.ReadOnly = true;
-            this.richTextBox6.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox6.TabIndex = 13;
-            this.richTextBox6.Text = "aaaaaaaa";
-            this.richTextBox6.Click += new System.EventHandler(this.richTextBox6_TextChanged);
+            richTextBox6.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox6.Location = new Point(251, 253);
+            richTextBox6.Margin = new Padding(3, 4, 3, 4);
+            richTextBox6.Name = "richTextBox6";
+            richTextBox6.ReadOnly = true;
+            richTextBox6.Size = new Size(114, 132);
+            richTextBox6.TabIndex = 13;
+            richTextBox6.Text = "aaaaaaaa";
+            richTextBox6.Click += richTextBox6_TextChanged;
             // 
             // richTextBox7
             // 
-            this.richTextBox7.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox7.Location = new System.Drawing.Point(370, 190);
-            this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.ReadOnly = true;
-            this.richTextBox7.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox7.TabIndex = 14;
-            this.richTextBox7.Text = "aaaaaaaa";
-            this.richTextBox7.Click += new System.EventHandler(this.richTextBox7_TextChanged);
+            richTextBox7.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox7.Location = new Point(423, 253);
+            richTextBox7.Margin = new Padding(3, 4, 3, 4);
+            richTextBox7.Name = "richTextBox7";
+            richTextBox7.ReadOnly = true;
+            richTextBox7.Size = new Size(114, 132);
+            richTextBox7.TabIndex = 14;
+            richTextBox7.Text = "aaaaaaaa";
+            richTextBox7.Click += richTextBox7_TextChanged;
             // 
             // richTextBox8
             // 
-            this.richTextBox8.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox8.Location = new System.Drawing.Point(520, 190);
-            this.richTextBox8.Name = "richTextBox8";
-            this.richTextBox8.ReadOnly = true;
-            this.richTextBox8.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox8.TabIndex = 15;
-            this.richTextBox8.Text = "aaaaaaaa";
-            this.richTextBox8.Click += new System.EventHandler(this.richTextBox8_TextChanged);
+            richTextBox8.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox8.Location = new Point(594, 253);
+            richTextBox8.Margin = new Padding(3, 4, 3, 4);
+            richTextBox8.Name = "richTextBox8";
+            richTextBox8.ReadOnly = true;
+            richTextBox8.Size = new Size(114, 132);
+            richTextBox8.TabIndex = 15;
+            richTextBox8.Text = "aaaaaaaa";
+            richTextBox8.Click += richTextBox8_TextChanged;
             // 
             // richTextBox9
             // 
-            this.richTextBox9.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox9.Location = new System.Drawing.Point(70, 340);
-            this.richTextBox9.Name = "richTextBox9";
-            this.richTextBox9.ReadOnly = true;
-            this.richTextBox9.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox9.TabIndex = 16;
-            this.richTextBox9.Text = "aaaaaaaa";
-            this.richTextBox9.Click += new System.EventHandler(this.richTextBox9_TextChanged);
+            richTextBox9.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox9.Location = new Point(80, 453);
+            richTextBox9.Margin = new Padding(3, 4, 3, 4);
+            richTextBox9.Name = "richTextBox9";
+            richTextBox9.ReadOnly = true;
+            richTextBox9.Size = new Size(114, 132);
+            richTextBox9.TabIndex = 16;
+            richTextBox9.Text = "aaaaaaaa";
+            richTextBox9.Click += richTextBox9_TextChanged;
             // 
             // richTextBox10
             // 
-            this.richTextBox10.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox10.Location = new System.Drawing.Point(220, 340);
-            this.richTextBox10.Name = "richTextBox10";
-            this.richTextBox10.ReadOnly = true;
-            this.richTextBox10.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox10.TabIndex = 17;
-            this.richTextBox10.Text = "aaaaaaaa";
-            this.richTextBox10.Click += new System.EventHandler(this.richTextBox10_TextChanged);
+            richTextBox10.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox10.Location = new Point(251, 453);
+            richTextBox10.Margin = new Padding(3, 4, 3, 4);
+            richTextBox10.Name = "richTextBox10";
+            richTextBox10.ReadOnly = true;
+            richTextBox10.Size = new Size(114, 132);
+            richTextBox10.TabIndex = 17;
+            richTextBox10.Text = "aaaaaaaa";
+            richTextBox10.Click += richTextBox10_TextChanged;
             // 
             // richTextBox11
             // 
-            this.richTextBox11.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox11.Location = new System.Drawing.Point(370, 340);
-            this.richTextBox11.Name = "richTextBox11";
-            this.richTextBox11.ReadOnly = true;
-            this.richTextBox11.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox11.TabIndex = 18;
-            this.richTextBox11.Text = "aaaaaaaa";
-            this.richTextBox11.Click += new System.EventHandler(this.richTextBox11_TextChanged);
+            richTextBox11.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox11.Location = new Point(423, 453);
+            richTextBox11.Margin = new Padding(3, 4, 3, 4);
+            richTextBox11.Name = "richTextBox11";
+            richTextBox11.ReadOnly = true;
+            richTextBox11.Size = new Size(114, 132);
+            richTextBox11.TabIndex = 18;
+            richTextBox11.Text = "aaaaaaaa";
+            richTextBox11.Click += richTextBox11_TextChanged;
             // 
             // richTextBox12
             // 
-            this.richTextBox12.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox12.Location = new System.Drawing.Point(520, 340);
-            this.richTextBox12.Name = "richTextBox12";
-            this.richTextBox12.ReadOnly = true;
-            this.richTextBox12.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox12.TabIndex = 19;
-            this.richTextBox12.Text = "aaaaaaaa";
-            this.richTextBox12.Click += new System.EventHandler(this.richTextBox12_TextChanged);
+            richTextBox12.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox12.Location = new Point(594, 453);
+            richTextBox12.Margin = new Padding(3, 4, 3, 4);
+            richTextBox12.Name = "richTextBox12";
+            richTextBox12.ReadOnly = true;
+            richTextBox12.Size = new Size(114, 132);
+            richTextBox12.TabIndex = 19;
+            richTextBox12.Text = "aaaaaaaa";
+            richTextBox12.Click += richTextBox12_TextChanged;
             // 
             // richTextBox13
             // 
-            this.richTextBox13.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox13.Location = new System.Drawing.Point(70, 490);
-            this.richTextBox13.Name = "richTextBox13";
-            this.richTextBox13.ReadOnly = true;
-            this.richTextBox13.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox13.TabIndex = 20;
-            this.richTextBox13.Text = "aaaaaaaa";
-            this.richTextBox13.Click += new System.EventHandler(this.richTextBox13_TextChanged);
+            richTextBox13.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox13.Location = new Point(80, 653);
+            richTextBox13.Margin = new Padding(3, 4, 3, 4);
+            richTextBox13.Name = "richTextBox13";
+            richTextBox13.ReadOnly = true;
+            richTextBox13.Size = new Size(114, 132);
+            richTextBox13.TabIndex = 20;
+            richTextBox13.Text = "aaaaaaaa";
+            richTextBox13.Click += richTextBox13_TextChanged;
             // 
             // richTextBox14
             // 
-            this.richTextBox14.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox14.Location = new System.Drawing.Point(220, 490);
-            this.richTextBox14.Name = "richTextBox14";
-            this.richTextBox14.ReadOnly = true;
-            this.richTextBox14.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox14.TabIndex = 21;
-            this.richTextBox14.Text = "aaaaaaaa";
-            this.richTextBox14.Click += new System.EventHandler(this.richTextBox14_TextChanged);
+            richTextBox14.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox14.Location = new Point(251, 653);
+            richTextBox14.Margin = new Padding(3, 4, 3, 4);
+            richTextBox14.Name = "richTextBox14";
+            richTextBox14.ReadOnly = true;
+            richTextBox14.Size = new Size(114, 132);
+            richTextBox14.TabIndex = 21;
+            richTextBox14.Text = "aaaaaaaa";
+            richTextBox14.Click += richTextBox14_TextChanged;
             // 
             // richTextBox15
             // 
-            this.richTextBox15.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox15.Location = new System.Drawing.Point(370, 490);
-            this.richTextBox15.Name = "richTextBox15";
-            this.richTextBox15.ReadOnly = true;
-            this.richTextBox15.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox15.TabIndex = 22;
-            this.richTextBox15.Text = "aaaaaaaa";
-            this.richTextBox15.Click += new System.EventHandler(this.richTextBox15_TextChanged);
+            richTextBox15.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox15.Location = new Point(423, 653);
+            richTextBox15.Margin = new Padding(3, 4, 3, 4);
+            richTextBox15.Name = "richTextBox15";
+            richTextBox15.ReadOnly = true;
+            richTextBox15.Size = new Size(114, 132);
+            richTextBox15.TabIndex = 22;
+            richTextBox15.Text = "aaaaaaaa";
+            richTextBox15.Click += richTextBox15_TextChanged;
             // 
             // richTextBox16
             // 
-            this.richTextBox16.Font = new System.Drawing.Font("Microsoft Tai Le", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox16.Location = new System.Drawing.Point(520, 490);
-            this.richTextBox16.Name = "richTextBox16";
-            this.richTextBox16.ReadOnly = true;
-            this.richTextBox16.Size = new System.Drawing.Size(100, 100);
-            this.richTextBox16.TabIndex = 23;
-            this.richTextBox16.Text = "aaaaaaaa";
-            this.richTextBox16.Click += new System.EventHandler(this.richTextBox16_TextChanged);
+            richTextBox16.Font = new Font("Microsoft Tai Le", 60F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox16.Location = new Point(594, 653);
+            richTextBox16.Margin = new Padding(3, 4, 3, 4);
+            richTextBox16.Name = "richTextBox16";
+            richTextBox16.ReadOnly = true;
+            richTextBox16.Size = new Size(114, 132);
+            richTextBox16.TabIndex = 23;
+            richTextBox16.Text = "aaaaaaaa";
+            richTextBox16.Click += richTextBox16_TextChanged;
             // 
             // labelTime
             // 
-            this.labelTime.AutoSize = true;
-            this.labelTime.BackColor = System.Drawing.Color.Transparent;
-            this.labelTime.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelTime.ForeColor = System.Drawing.Color.White;
-            this.labelTime.Location = new System.Drawing.Point(650, 40);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(103, 26);
-            this.labelTime.TabIndex = 24;
-            this.labelTime.Text = "Time left:";
+            labelTime.AutoSize = true;
+            labelTime.BackColor = Color.Transparent;
+            labelTime.Font = new Font("Microsoft Tai Le", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelTime.ForeColor = Color.White;
+            labelTime.Location = new Point(743, 53);
+            labelTime.Name = "labelTime";
+            labelTime.Size = new Size(129, 33);
+            labelTime.TabIndex = 24;
+            labelTime.Text = "Time left:";
             // 
             // time
             // 
-            this.time.AutoSize = true;
-            this.time.BackColor = System.Drawing.Color.Transparent;
-            this.time.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.time.ForeColor = System.Drawing.Color.White;
-            this.time.Location = new System.Drawing.Point(759, 39);
-            this.time.Name = "time";
-            this.time.Size = new System.Drawing.Size(70, 26);
-            this.time.TabIndex = 25;
-            this.time.Text = "label1";
+            time.AutoSize = true;
+            time.BackColor = Color.Transparent;
+            time.Font = new Font("Microsoft Tai Le", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            time.ForeColor = Color.White;
+            time.Location = new Point(867, 52);
+            time.Name = "time";
+            time.Size = new Size(86, 33);
+            time.TabIndex = 25;
+            time.Text = "label1";
             // 
             // timer
             // 
-            this.timer.Interval = 1000;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            timer.Interval = 1000;
+            timer.Tick += timer_Tick;
             // 
             // FlashMemoryCardGameQuiz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Quizy.Properties.Resources.Background_flash_memory_card;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(864, 631);
-            this.Controls.Add(this.time);
-            this.Controls.Add(this.labelTime);
-            this.Controls.Add(this.richTextBox16);
-            this.Controls.Add(this.richTextBox15);
-            this.Controls.Add(this.richTextBox14);
-            this.Controls.Add(this.richTextBox13);
-            this.Controls.Add(this.richTextBox12);
-            this.Controls.Add(this.richTextBox11);
-            this.Controls.Add(this.richTextBox10);
-            this.Controls.Add(this.richTextBox9);
-            this.Controls.Add(this.richTextBox8);
-            this.Controls.Add(this.richTextBox7);
-            this.Controls.Add(this.richTextBox6);
-            this.Controls.Add(this.richTextBox5);
-            this.Controls.Add(this.richTextBox4);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
-            this.Name = "FlashMemoryCardGameQuiz";
-            this.Text = "Memory Card - Quizy";
-            this.Load += new System.EventHandler(this.FlashMemoryCardGameQuiz_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Background_flash_memory_card;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(987, 841);
+            Controls.Add(time);
+            Controls.Add(labelTime);
+            Controls.Add(richTextBox16);
+            Controls.Add(richTextBox15);
+            Controls.Add(richTextBox14);
+            Controls.Add(richTextBox13);
+            Controls.Add(richTextBox12);
+            Controls.Add(richTextBox11);
+            Controls.Add(richTextBox10);
+            Controls.Add(richTextBox9);
+            Controls.Add(richTextBox8);
+            Controls.Add(richTextBox7);
+            Controls.Add(richTextBox6);
+            Controls.Add(richTextBox5);
+            Controls.Add(richTextBox4);
+            Controls.Add(richTextBox3);
+            Controls.Add(richTextBox2);
+            Controls.Add(richTextBox1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FlashMemoryCardGameQuiz";
+            Text = "Memory Card - Quizy";
+            Load += FlashMemoryCardGameQuiz_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
