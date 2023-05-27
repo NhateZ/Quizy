@@ -28,151 +28,154 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.pictureBoxGame = new System.Windows.Forms.PictureBox();
-            this.labelScore = new System.Windows.Forms.Label();
-            this.Score = new System.Windows.Forms.Label();
-            this.timerTick = new System.Windows.Forms.Timer(this.components);
-            this.RequiredScore = new System.Windows.Forms.Label();
-            this.labelRequiredScore = new System.Windows.Forms.Label();
-            this.pictureBoxSnake = new System.Windows.Forms.PictureBox();
-            this.labelTime = new System.Windows.Forms.Label();
-            this.labelTextTimer = new System.Windows.Forms.Label();
-            this.timerTime = new System.Windows.Forms.Timer(this.components);
-            this.timerMovement = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGame)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSnake)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            pictureBoxGame = new PictureBox();
+            labelScore = new Label();
+            Score = new Label();
+            timerTick = new System.Windows.Forms.Timer(components);
+            RequiredScore = new Label();
+            labelRequiredScore = new Label();
+            pictureBoxSnake = new PictureBox();
+            labelTime = new Label();
+            labelTextTimer = new Label();
+            timerTime = new System.Windows.Forms.Timer(components);
+            timerMovement = new System.Windows.Forms.Timer(components);
+            ((System.ComponentModel.ISupportInitialize)pictureBoxGame).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSnake).BeginInit();
+            SuspendLayout();
             // 
             // pictureBoxGame
             // 
-            this.pictureBoxGame.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.pictureBoxGame.BackgroundImage = global::Quizy.Properties.Resources.background_main_quiz;
-            this.pictureBoxGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxGame.Location = new System.Drawing.Point(12, 12);
-            this.pictureBoxGame.Name = "pictureBoxGame";
-            this.pictureBoxGame.Size = new System.Drawing.Size(658, 545);
-            this.pictureBoxGame.TabIndex = 0;
-            this.pictureBoxGame.TabStop = false;
-            this.pictureBoxGame.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxGame_Paint);
+            pictureBoxGame.BackColor = SystemColors.ButtonShadow;
+            pictureBoxGame.BackgroundImage = Properties.Resources.background_main_quiz;
+            pictureBoxGame.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxGame.Location = new Point(14, 16);
+            pictureBoxGame.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxGame.Name = "pictureBoxGame";
+            pictureBoxGame.Size = new Size(752, 727);
+            pictureBoxGame.TabIndex = 0;
+            pictureBoxGame.TabStop = false;
+            pictureBoxGame.Paint += pictureBoxGame_Paint;
             // 
             // labelScore
             // 
-            this.labelScore.AutoSize = true;
-            this.labelScore.BackColor = System.Drawing.Color.Transparent;
-            this.labelScore.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelScore.Location = new System.Drawing.Point(676, 48);
-            this.labelScore.Name = "labelScore";
-            this.labelScore.Size = new System.Drawing.Size(61, 23);
-            this.labelScore.TabIndex = 1;
-            this.labelScore.Text = "Score:";
+            labelScore.AutoSize = true;
+            labelScore.BackColor = Color.Transparent;
+            labelScore.Font = new Font("Microsoft Tai Le", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            labelScore.Location = new Point(773, 64);
+            labelScore.Name = "labelScore";
+            labelScore.Size = new Size(77, 30);
+            labelScore.TabIndex = 1;
+            labelScore.Text = "Score:";
             // 
             // Score
             // 
-            this.Score.AutoSize = true;
-            this.Score.BackColor = System.Drawing.Color.Transparent;
-            this.Score.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Score.Location = new System.Drawing.Point(743, 48);
-            this.Score.Name = "Score";
-            this.Score.Size = new System.Drawing.Size(20, 23);
-            this.Score.TabIndex = 2;
-            this.Score.Text = "0";
+            Score.AutoSize = true;
+            Score.BackColor = Color.Transparent;
+            Score.Font = new Font("Microsoft Tai Le", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            Score.Location = new Point(849, 64);
+            Score.Name = "Score";
+            Score.Size = new Size(26, 30);
+            Score.TabIndex = 2;
+            Score.Text = "0";
             // 
             // timerTick
             // 
-            this.timerTick.Interval = 65;
-            this.timerTick.Tick += new System.EventHandler(this.timerTick_Tick);
+            timerTick.Interval = 65;
+            timerTick.Tick += timerTick_Tick;
             // 
             // RequiredScore
             // 
-            this.RequiredScore.AutoSize = true;
-            this.RequiredScore.BackColor = System.Drawing.Color.Transparent;
-            this.RequiredScore.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RequiredScore.Location = new System.Drawing.Point(824, 78);
-            this.RequiredScore.Name = "RequiredScore";
-            this.RequiredScore.Size = new System.Drawing.Size(20, 23);
-            this.RequiredScore.TabIndex = 4;
-            this.RequiredScore.Text = "0";
+            RequiredScore.AutoSize = true;
+            RequiredScore.BackColor = Color.Transparent;
+            RequiredScore.Font = new Font("Microsoft Tai Le", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            RequiredScore.Location = new Point(942, 104);
+            RequiredScore.Name = "RequiredScore";
+            RequiredScore.Size = new Size(26, 30);
+            RequiredScore.TabIndex = 4;
+            RequiredScore.Text = "0";
             // 
             // labelRequiredScore
             // 
-            this.labelRequiredScore.AutoSize = true;
-            this.labelRequiredScore.BackColor = System.Drawing.Color.Transparent;
-            this.labelRequiredScore.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelRequiredScore.Location = new System.Drawing.Point(676, 78);
-            this.labelRequiredScore.Name = "labelRequiredScore";
-            this.labelRequiredScore.Size = new System.Drawing.Size(142, 23);
-            this.labelRequiredScore.TabIndex = 3;
-            this.labelRequiredScore.Text = "Required Score:";
+            labelRequiredScore.AutoSize = true;
+            labelRequiredScore.BackColor = Color.Transparent;
+            labelRequiredScore.Font = new Font("Microsoft Tai Le", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            labelRequiredScore.Location = new Point(773, 104);
+            labelRequiredScore.Name = "labelRequiredScore";
+            labelRequiredScore.Size = new Size(180, 30);
+            labelRequiredScore.TabIndex = 3;
+            labelRequiredScore.Text = "Required Score:";
             // 
             // pictureBoxSnake
             // 
-            this.pictureBoxSnake.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxSnake.BackgroundImage = global::Quizy.Properties.Resources.Snake;
-            this.pictureBoxSnake.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxSnake.Location = new System.Drawing.Point(676, 218);
-            this.pictureBoxSnake.Name = "pictureBoxSnake";
-            this.pictureBoxSnake.Size = new System.Drawing.Size(196, 252);
-            this.pictureBoxSnake.TabIndex = 5;
-            this.pictureBoxSnake.TabStop = false;
+            pictureBoxSnake.BackColor = Color.Transparent;
+            pictureBoxSnake.BackgroundImage = Properties.Resources.Snake;
+            pictureBoxSnake.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBoxSnake.Location = new Point(773, 291);
+            pictureBoxSnake.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxSnake.Name = "pictureBoxSnake";
+            pictureBoxSnake.Size = new Size(224, 336);
+            pictureBoxSnake.TabIndex = 5;
+            pictureBoxSnake.TabStop = false;
             // 
             // labelTime
             // 
-            this.labelTime.AutoSize = true;
-            this.labelTime.BackColor = System.Drawing.Color.Transparent;
-            this.labelTime.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTime.Location = new System.Drawing.Point(737, 112);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(20, 23);
-            this.labelTime.TabIndex = 7;
-            this.labelTime.Text = "0";
+            labelTime.AutoSize = true;
+            labelTime.BackColor = Color.Transparent;
+            labelTime.Font = new Font("Microsoft Tai Le", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTime.Location = new Point(842, 149);
+            labelTime.Name = "labelTime";
+            labelTime.Size = new Size(26, 30);
+            labelTime.TabIndex = 7;
+            labelTime.Text = "0";
             // 
             // labelTextTimer
             // 
-            this.labelTextTimer.AutoSize = true;
-            this.labelTextTimer.BackColor = System.Drawing.Color.Transparent;
-            this.labelTextTimer.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTextTimer.Location = new System.Drawing.Point(676, 112);
-            this.labelTextTimer.Name = "labelTextTimer";
-            this.labelTextTimer.Size = new System.Drawing.Size(55, 23);
-            this.labelTextTimer.TabIndex = 6;
-            this.labelTextTimer.Text = "Time:";
+            labelTextTimer.AutoSize = true;
+            labelTextTimer.BackColor = Color.Transparent;
+            labelTextTimer.Font = new Font("Microsoft Tai Le", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTextTimer.Location = new Point(773, 149);
+            labelTextTimer.Name = "labelTextTimer";
+            labelTextTimer.Size = new Size(71, 30);
+            labelTextTimer.TabIndex = 6;
+            labelTextTimer.Text = "Time:";
             // 
             // timerTime
             // 
-            this.timerTime.Interval = 1000;
-            this.timerTime.Tick += new System.EventHandler(this.timerTime_Tick);
+            timerTime.Interval = 1000;
+            timerTime.Tick += timerTime_Tick;
             // 
             // timerMovement
             // 
-            this.timerMovement.Interval = 65;
-            this.timerMovement.Tick += new System.EventHandler(this.timerMovement_Tick);
+            timerMovement.Interval = 65;
+            timerMovement.Tick += timerMovement_Tick;
             // 
             // SnakeGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Quizy.Properties.Resources.background;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(884, 561);
-            this.Controls.Add(this.labelTime);
-            this.Controls.Add(this.labelTextTimer);
-            this.Controls.Add(this.pictureBoxSnake);
-            this.Controls.Add(this.RequiredScore);
-            this.Controls.Add(this.labelRequiredScore);
-            this.Controls.Add(this.Score);
-            this.Controls.Add(this.labelScore);
-            this.Controls.Add(this.pictureBoxGame);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "SnakeGame";
-            this.Text = "Snake";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGame)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSnake)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.background;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1010, 748);
+            Controls.Add(labelTime);
+            Controls.Add(labelTextTimer);
+            Controls.Add(pictureBoxSnake);
+            Controls.Add(RequiredScore);
+            Controls.Add(labelRequiredScore);
+            Controls.Add(Score);
+            Controls.Add(labelScore);
+            Controls.Add(pictureBoxGame);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "SnakeGame";
+            Text = "Snake";
+            Load += SnakeGame_Load;
+            KeyDown += KeyIsDown;
+            KeyUp += KeyIsUp;
+            ((System.ComponentModel.ISupportInitialize)pictureBoxGame).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxSnake).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quizy.program_interpretor;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,14 +20,14 @@ namespace Quizy.Quiz_Form_Template.Snake
         Random rand = new Random();
 
         bool goLeft, goRight, goDown, goUp;
-        
+
         int maxWidth;
         int maxHeight;
 
         int score;
-        public int time;
+        public int time = 50;
         public int requiredScore = 100;
-        public int increment = 10;        
+        public int increment = 10;
         public bool isFinished = false;
 
         //Fuctions
@@ -88,13 +89,16 @@ namespace Quizy.Quiz_Form_Template.Snake
                 Y = Snake[Snake.Count - 1].Y
             };
             Snake.Add(body);
-            food = new Circle { X = rand.Next(2, maxWidth), Y = rand.Next(2, maxHeight) };                      
-            if(score == requiredScore)
+            food = new Circle { X = rand.Next(2, maxWidth), Y = rand.Next(2, maxHeight) };
+            if (score >= requiredScore)
             {
                 timerTick.Stop();
                 timerTime.Stop();
                 timerMovement.Stop();
                 MessageBox.Show("Ai câștigat!", "Ai câștigat!");
+                interpretor intr = new interpretor();
+                intr.addPoints(100);
+                this.Close();
             }
         }
 
@@ -131,7 +135,7 @@ namespace Quizy.Quiz_Form_Template.Snake
         {
             time--;
             labelTime.Text = time.ToString();
-            if(time<=0) 
+            if (time <= 0)
             {
                 GameOver();
             }
@@ -216,7 +220,7 @@ namespace Quizy.Quiz_Form_Template.Snake
             pictureBoxGame.Invalidate();
         }
 
-        
+
 
         private void startGame()
         {
@@ -224,7 +228,7 @@ namespace Quizy.Quiz_Form_Template.Snake
             maxHeight = pictureBoxGame.Height / Settings.Height - 1;
             Snake.Clear();
             score = 0;
-            Score.Text = "Score: " + score;
+            Score.Text = score.ToString();
             Circle head = new Circle { X = 10, Y = 5 };
             Snake.Add(head); // adding the head part of the snake to the list
             Circle body = new Circle();
@@ -235,7 +239,7 @@ namespace Quizy.Quiz_Form_Template.Snake
             timerMovement.Start();
         }
 
-         
+
         async private void GameOver()
         {
             timerTick.Stop();
@@ -244,6 +248,11 @@ namespace Quizy.Quiz_Form_Template.Snake
             MessageBox.Show("Ai pierdut!\nJocul v-a reîncepe în cinci secunde!", "Ai piretdut!");
             await Task.Delay(500);
             startGame();
+        }
+
+        private void SnakeGame_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

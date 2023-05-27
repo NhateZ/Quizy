@@ -4,13 +4,10 @@
     <Compile Update="Forms Derived From Start Form\FormCustomQuizCreator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms Derived From Start Form\FormMainQuiz.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FormStartApp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms Derived From Start Form\FormMainQuiz.cs">
+    <Compile Update="program_interpretor\GetCode.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Quiz Form Template\FlashMemoryCardGameQuiz.cs">
